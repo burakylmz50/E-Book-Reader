@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6508D7D2239DC3EE00EC2B6B /* SifremiUnuttum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6508D7D1239DC3EE00EC2B6B /* SifremiUnuttum.storyboard */; };
+		6508D7D4239DC48E00EC2B6B /* SifremiUnuttumController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6508D7D3239DC48E00EC2B6B /* SifremiUnuttumController.swift */; };
+		6508D7D623A024C100EC2B6B /* SifremiUnuttumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6508D7D523A024C100EC2B6B /* SifremiUnuttumView.swift */; };
+		6508D7D823A024CA00EC2B6B /* SifremiUnuttumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6508D7D723A024CA00EC2B6B /* SifremiUnuttumModel.swift */; };
+		650E3C4523997C4B00440381 /* uyeOl.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 650E3C4423997C4B00440381 /* uyeOl.storyboard */; };
+		650E3C4723997C7200440381 /* UyeOlController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650E3C4623997C7200440381 /* UyeOlController.swift */; };
+		650E3C4A2399BB5700440381 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650E3C492399BB5700440381 /* LoginView.swift */; };
+		650E3C4C2399BB6500440381 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650E3C4B2399BB6500440381 /* LoginModel.swift */; };
+		650E3C4E2399C44800440381 /* UyeOlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650E3C4D2399C44800440381 /* UyeOlView.swift */; };
+		650E3C502399C46200440381 /* UyeOlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650E3C4F2399C46200440381 /* UyeOlModel.swift */; };
+		65AC1F56238AA6060058B242 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC1F55238AA6060058B242 /* AppDelegate.swift */; };
+		65AC1F5A238AA6060058B242 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC1F59238AA6060058B242 /* LoginController.swift */; };
+		65AC1F5D238AA6060058B242 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65AC1F5B238AA6060058B242 /* Main.storyboard */; };
+		65AC1F5F238AA6090058B242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65AC1F5E238AA6090058B242 /* Assets.xcassets */; };
+		65AC1F62238AA6090058B242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65AC1F60238AA6090058B242 /* LaunchScreen.storyboard */; };
+		65CB4B67238D63B1009A64E3 /* OpenEpubFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CB4B66238D63B1009A64E3 /* OpenEpubFile.swift */; };
+		65CB4B6A238D6451009A64E3 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CB4B69238D6451009A64E3 /* ActivityIndicator.swift */; };
+		88C1D9080C0DB0D3C0F80F06 /* Pods_KitaplikApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375F1F4D3E6DD849E9B2824D /* Pods_KitaplikApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		375F1F4D3E6DD849E9B2824D /* Pods_KitaplikApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KitaplikApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6508D7D1239DC3EE00EC2B6B /* SifremiUnuttum.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SifremiUnuttum.storyboard; sourceTree = "<group>"; };
+		6508D7D3239DC48E00EC2B6B /* SifremiUnuttumController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SifremiUnuttumController.swift; sourceTree = "<group>"; };
+		6508D7D523A024C100EC2B6B /* SifremiUnuttumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SifremiUnuttumView.swift; sourceTree = "<group>"; };
+		6508D7D723A024CA00EC2B6B /* SifremiUnuttumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SifremiUnuttumModel.swift; sourceTree = "<group>"; };
+		650E3C4423997C4B00440381 /* uyeOl.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = uyeOl.storyboard; sourceTree = "<group>"; };
+		650E3C4623997C7200440381 /* UyeOlController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UyeOlController.swift; sourceTree = "<group>"; };
+		650E3C492399BB5700440381 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		650E3C4B2399BB6500440381 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		650E3C4D2399C44800440381 /* UyeOlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UyeOlView.swift; sourceTree = "<group>"; };
+		650E3C4F2399C46200440381 /* UyeOlModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UyeOlModel.swift; sourceTree = "<group>"; };
+		65AC1F52238AA6060058B242 /* KitaplikApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KitaplikApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65AC1F55238AA6060058B242 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		65AC1F59238AA6060058B242 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		65AC1F5C238AA6060058B242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65AC1F5E238AA6090058B242 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65AC1F61238AA6090058B242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		65AC1F63238AA6090058B242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65CB4B66238D63B1009A64E3 /* OpenEpubFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenEpubFile.swift; sourceTree = "<group>"; };
+		65CB4B69238D6451009A64E3 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		7CC679C0A7E199F06B6FA73C /* Pods-KitaplikApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KitaplikApp.debug.xcconfig"; path = "Target Support Files/Pods-KitaplikApp/Pods-KitaplikApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D8D373D28E772AE2228E8CBF /* Pods-KitaplikApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KitaplikApp.release.xcconfig"; path = "Target Support Files/Pods-KitaplikApp/Pods-KitaplikApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65AC1F4F238AA6060058B242 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88C1D9080C0DB0D3C0F80F06 /* Pods_KitaplikApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E7BC4F6E26B89907D580638 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7CC679C0A7E199F06B6FA73C /* Pods-KitaplikApp.debug.xcconfig */,
+				D8D373D28E772AE2228E8CBF /* Pods-KitaplikApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		650E3C4823997FE400440381 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				65AC1F5B238AA6060058B242 /* Main.storyboard */,
+				650E3C4423997C4B00440381 /* uyeOl.storyboard */,
+				6508D7D1239DC3EE00EC2B6B /* SifremiUnuttum.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		65AC1F49238AA6060058B242 = {
+			isa = PBXGroup;
+			children = (
+				65AC1F54238AA6060058B242 /* KitaplikApp */,
+				65AC1F53238AA6060058B242 /* Products */,
+				0E7BC4F6E26B89907D580638 /* Pods */,
+				CBB3E65E586A8C60BA584180 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		65AC1F53238AA6060058B242 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65AC1F52238AA6060058B242 /* KitaplikApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65AC1F54238AA6060058B242 /* KitaplikApp */ = {
+			isa = PBXGroup;
+			children = (
+				650E3C4823997FE400440381 /* Storyboard */,
+				65CB4B68238D641C009A64E3 /* Extension */,
+				65CB4B65238D6393009A64E3 /* Epub */,
+				65CB4B64238D6362009A64E3 /* Controller */,
+				65CB4B63238D635C009A64E3 /* View */,
+				65CB4B62238D6358009A64E3 /* Model */,
+				65AC1F55238AA6060058B242 /* AppDelegate.swift */,
+				65AC1F5E238AA6090058B242 /* Assets.xcassets */,
+				65AC1F60238AA6090058B242 /* LaunchScreen.storyboard */,
+				65AC1F63238AA6090058B242 /* Info.plist */,
+			);
+			path = KitaplikApp;
+			sourceTree = "<group>";
+		};
+		65CB4B62238D6358009A64E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				650E3C4B2399BB6500440381 /* LoginModel.swift */,
+				650E3C4F2399C46200440381 /* UyeOlModel.swift */,
+				6508D7D723A024CA00EC2B6B /* SifremiUnuttumModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		65CB4B63238D635C009A64E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				650E3C492399BB5700440381 /* LoginView.swift */,
+				650E3C4D2399C44800440381 /* UyeOlView.swift */,
+				6508D7D523A024C100EC2B6B /* SifremiUnuttumView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		65CB4B64238D6362009A64E3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				65AC1F59238AA6060058B242 /* LoginController.swift */,
+				650E3C4623997C7200440381 /* UyeOlController.swift */,
+				6508D7D3239DC48E00EC2B6B /* SifremiUnuttumController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		65CB4B65238D6393009A64E3 /* Epub */ = {
+			isa = PBXGroup;
+			children = (
+				65CB4B66238D63B1009A64E3 /* OpenEpubFile.swift */,
+			);
+			path = Epub;
+			sourceTree = "<group>";
+		};
+		65CB4B68238D641C009A64E3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				65CB4B69238D6451009A64E3 /* ActivityIndicator.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CBB3E65E586A8C60BA584180 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				375F1F4D3E6DD849E9B2824D /* Pods_KitaplikApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65AC1F51238AA6060058B242 /* KitaplikApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65AC1F66238AA6090058B242 /* Build configuration list for PBXNativeTarget "KitaplikApp" */;
+			buildPhases = (
+				62B9F2EDDA42227B7F018AB8 /* [CP] Check Pods Manifest.lock */,
+				65AC1F4E238AA6060058B242 /* Sources */,
+				65AC1F4F238AA6060058B242 /* Frameworks */,
+				65AC1F50238AA6060058B242 /* Resources */,
+				A8073ABB2C106CA035794230 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KitaplikApp;
+			productName = KitaplikApp;
+			productReference = 65AC1F52238AA6060058B242 /* KitaplikApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65AC1F4A238AA6060058B242 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Burak Yılmaz";
+				TargetAttributes = {
+					65AC1F51238AA6060058B242 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 65AC1F4D238AA6060058B242 /* Build configuration list for PBXProject "KitaplikApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65AC1F49238AA6060058B242;
+			productRefGroup = 65AC1F53238AA6060058B242 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65AC1F51238AA6060058B242 /* KitaplikApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65AC1F50238AA6060058B242 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65AC1F62238AA6090058B242 /* LaunchScreen.storyboard in Resources */,
+				650E3C4523997C4B00440381 /* uyeOl.storyboard in Resources */,
+				65AC1F5F238AA6090058B242 /* Assets.xcassets in Resources */,
+				65AC1F5D238AA6060058B242 /* Main.storyboard in Resources */,
+				6508D7D2239DC3EE00EC2B6B /* SifremiUnuttum.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62B9F2EDDA42227B7F018AB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KitaplikApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8073ABB2C106CA035794230 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KitaplikApp/Pods-KitaplikApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KitaplikApp/Pods-KitaplikApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KitaplikApp/Pods-KitaplikApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65AC1F4E238AA6060058B242 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6508D7D4239DC48E00EC2B6B /* SifremiUnuttumController.swift in Sources */,
+				650E3C4A2399BB5700440381 /* LoginView.swift in Sources */,
+				6508D7D823A024CA00EC2B6B /* SifremiUnuttumModel.swift in Sources */,
+				6508D7D623A024C100EC2B6B /* SifremiUnuttumView.swift in Sources */,
+				650E3C4C2399BB6500440381 /* LoginModel.swift in Sources */,
+				650E3C4723997C7200440381 /* UyeOlController.swift in Sources */,
+				650E3C502399C46200440381 /* UyeOlModel.swift in Sources */,
+				650E3C4E2399C44800440381 /* UyeOlView.swift in Sources */,
+				65CB4B6A238D6451009A64E3 /* ActivityIndicator.swift in Sources */,
+				65AC1F5A238AA6060058B242 /* LoginController.swift in Sources */,
+				65CB4B67238D63B1009A64E3 /* OpenEpubFile.swift in Sources */,
+				65AC1F56238AA6060058B242 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		65AC1F5B238AA6060058B242 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65AC1F5C238AA6060058B242 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		65AC1F60238AA6090058B242 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65AC1F61238AA6090058B242 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65AC1F64238AA6090058B242 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		65AC1F65238AA6090058B242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65AC1F67238AA6090058B242 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CC679C0A7E199F06B6FA73C /* Pods-KitaplikApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VT9FNQ786;
+				INFOPLIST_FILE = KitaplikApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.KitaplikApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65AC1F68238AA6090058B242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8D373D28E772AE2228E8CBF /* Pods-KitaplikApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VT9FNQ786;
+				INFOPLIST_FILE = KitaplikApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.KitaplikApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65AC1F4D238AA6060058B242 /* Build configuration list for PBXProject "KitaplikApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65AC1F64238AA6090058B242 /* Debug */,
+				65AC1F65238AA6090058B242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65AC1F66238AA6090058B242 /* Build configuration list for PBXNativeTarget "KitaplikApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65AC1F67238AA6090058B242 /* Debug */,
+				65AC1F68238AA6090058B242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65AC1F4A238AA6060058B242 /* Project object */;
+}

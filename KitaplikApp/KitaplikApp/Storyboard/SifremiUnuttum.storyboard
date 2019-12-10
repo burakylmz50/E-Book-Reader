@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UiQ-r8-zA3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sifremi Unuttum Controller-->
+        <scene sceneID="QJj-M7-CCu">
+            <objects>
+                <viewController id="UiQ-r8-zA3" customClass="SifremiUnuttumController" customModule="KitaplikApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aqd-ly-rp2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şifremi Unuttum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9h-Ry-WUE">
+                                <rect key="frame" x="25" y="87" width="179" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="CPb-EQ-r8a"/>
+                                    <constraint firstAttribute="width" constant="179" id="u3E-Cl-dDc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZb-Lz-JQ0">
+                                <rect key="frame" x="365" y="87" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="l5t-7N-VF1"/>
+                                    <constraint firstAttribute="width" constant="24" id="y7m-f7-CAx"/>
+                                </constraints>
+                                <state key="normal" image="close"/>
+                                <connections>
+                                    <action selector="closeButton:" destination="UiQ-r8-zA3" eventType="touchUpInside" id="66V-Be-Ohz"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="E-posta adresinize parolanızı sıfırlama     talimatlarını içeren bir link göndereceğiz." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9fb-Dx-7pf">
+                                <rect key="frame" x="25" y="150" width="364" height="67"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="KKY-cC-Ir9"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mx2-if-Wai">
+                                <rect key="frame" x="20" y="254" width="374" height="58"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="Ieq-hG-s22"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                <connections>
+                                    <action selector="emailAdresiTF:" destination="UiQ-r8-zA3" eventType="editingChanged" id="Hfu-QD-x1e"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCm-7G-aLn">
+                                <rect key="frame" x="20" y="349" width="374" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="AaZ-g2-RRi"/>
+                                </constraints>
+                                <state key="normal" title="Gönder"/>
+                                <connections>
+                                    <action selector="gonderButton:" destination="UiQ-r8-zA3" eventType="touchUpInside" id="XBI-AH-NQd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="iZb-Lz-JQ0" firstAttribute="top" secondItem="S9h-Ry-WUE" secondAttribute="top" id="4qc-so-U7T"/>
+                            <constraint firstItem="S9h-Ry-WUE" firstAttribute="top" secondItem="vJD-QT-kef" secondAttribute="top" constant="43" id="58y-C4-HzN"/>
+                            <constraint firstItem="9fb-Dx-7pf" firstAttribute="leading" secondItem="vJD-QT-kef" secondAttribute="leading" constant="25" id="9SL-Ye-TgK"/>
+                            <constraint firstItem="S9h-Ry-WUE" firstAttribute="leading" secondItem="vJD-QT-kef" secondAttribute="leading" constant="25" id="9iq-rt-0Gx"/>
+                            <constraint firstItem="Mx2-if-Wai" firstAttribute="top" secondItem="9fb-Dx-7pf" secondAttribute="bottom" constant="37" id="Alh-EL-wJQ"/>
+                            <constraint firstItem="9fb-Dx-7pf" firstAttribute="top" secondItem="S9h-Ry-WUE" secondAttribute="bottom" constant="39" id="Lhf-vo-YLW"/>
+                            <constraint firstItem="vJD-QT-kef" firstAttribute="trailing" secondItem="bCm-7G-aLn" secondAttribute="trailing" constant="20" id="OnX-T0-pdS"/>
+                            <constraint firstItem="Mx2-if-Wai" firstAttribute="leading" secondItem="vJD-QT-kef" secondAttribute="leading" constant="20" id="RFU-vP-vp5"/>
+                            <constraint firstItem="vJD-QT-kef" firstAttribute="trailing" secondItem="Mx2-if-Wai" secondAttribute="trailing" constant="20" id="hGT-MG-xbq"/>
+                            <constraint firstItem="vJD-QT-kef" firstAttribute="trailing" secondItem="iZb-Lz-JQ0" secondAttribute="trailing" constant="25" id="kHp-NY-Bzd"/>
+                            <constraint firstItem="vJD-QT-kef" firstAttribute="trailing" secondItem="9fb-Dx-7pf" secondAttribute="trailing" constant="25" id="t5c-zF-3wd"/>
+                            <constraint firstItem="bCm-7G-aLn" firstAttribute="leading" secondItem="vJD-QT-kef" secondAttribute="leading" constant="20" id="yZQ-KT-pBQ"/>
+                            <constraint firstItem="bCm-7G-aLn" firstAttribute="top" secondItem="Mx2-if-Wai" secondAttribute="bottom" constant="37" id="ytS-hO-1kG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vJD-QT-kef"/>
+                    </view>
+                    <connections>
+                        <outlet property="aciklamaTW" destination="9fb-Dx-7pf" id="tHp-Xo-Vng"/>
+                        <outlet property="closeButton" destination="iZb-Lz-JQ0" id="nL8-u8-T05"/>
+                        <outlet property="emailAdresiTF" destination="Mx2-if-Wai" id="OkI-Xk-4In"/>
+                        <outlet property="gonderButton" destination="bCm-7G-aLn" id="UQ8-Og-SqI"/>
+                        <outlet property="sifremiUnuttumLabel" destination="S9h-Ry-WUE" id="BO5-Bz-gFU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bVa-i0-mh8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-178.2608695652174" y="14.732142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close" width="15" height="15"/>
+    </resources>
+</document>
