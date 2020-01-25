@@ -30,7 +30,6 @@ class SifremiUnuttumController: UIViewController ,UITextFieldDelegate{
         gonderButton.layer.borderWidth = 0
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red:0.07, green:0.09, blue:0.13, alpha:1.0)

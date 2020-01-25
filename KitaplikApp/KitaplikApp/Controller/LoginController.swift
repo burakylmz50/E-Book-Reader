@@ -23,29 +23,26 @@ class LoginController: UIViewController , UITextFieldDelegate{
     @IBOutlet weak var parolaTF: UITextField!
     @IBOutlet weak var girisYapButton: UIButton!
     @IBAction func girisYapButton(_ sender: Any) {
-        self.showSpinner(onView: view)
-        self.loginView.userLogin(epostaAdresi:emailAdresiTF.text! , parola : parolaTF.text!, completionHandler: {
-            Dictionary in print(Dictionary)
-            if(Dictionary == false){
-                DispatchQueue.main.async {
-                    self.removeSpinner()
-                    let alert = UIAlertController(title: "Uyarı", message: self.loginView.errorMessage, preferredStyle: .alert)
-                    let okButton = UIAlertAction(title: "Tamam", style: .cancel, handler: nil)
-                    alert.addAction(okButton)
-                    self.present(alert, animated: true, completion: nil)
-                }
-            }
-            else{
-                DispatchQueue.main.async {
-                    self.removeSpinner()
-                    let alert = UIAlertController(title: "Tebrikler", message: "Başarıyla giriş yapıldı", preferredStyle: .alert)
-                    let okButton = UIAlertAction(title: "Tamam", style: .cancel, handler: nil)
-                    alert.addAction(okButton)
-                    self.present(alert, animated: true, completion: nil)
-                    //                    self.performSegue(withIdentifier: "loginToHome", sender: self)
-                }
-            }
-        })
+         self.performSegue(withIdentifier: "LoginToTabBar", sender: self)
+//        self.showSpinner(onView: view)
+//        self.loginView.userLogin(epostaAdresi:emailAdresiTF.text! , parola : parolaTF.text!, completionHandler: {
+//            Dictionary in print(Dictionary)
+//            if(Dictionary == false){
+//                DispatchQueue.main.async {
+//                    self.removeSpinner()
+//                    let alert = UIAlertController(title: "Uyarı", message: self.loginView.errorMessage, preferredStyle: .alert)
+//                    let okButton = UIAlertAction(title: "Tamam", style: .cancel, handler: nil)
+//                    alert.addAction(okButton)
+//                    self.present(alert, animated: true, completion: nil)
+//                }
+//            }
+//            else{
+//                DispatchQueue.main.async {
+//                    self.removeSpinner()
+//                    self.performSegue(withIdentifier: "LoginToTabBar", sender: self)
+//                }
+//            }
+//        })
     }
     @IBAction func sifremiUnuttumButton(_ sender: Any) {
     }
@@ -107,7 +104,6 @@ class LoginController: UIViewController , UITextFieldDelegate{
         emailAdresiTF.backgroundColor = UIColor(red:0.15, green:0.16, blue:0.20, alpha:1.0)
         parolaTF.backgroundColor = UIColor(red:0.15, green:0.16, blue:0.20, alpha:1.0)
         
-        
         girisYapButton.layer.borderWidth = 1.0
         girisYapButton.layer.borderColor = UIColor(red:0.59, green:0.59, blue:0.59, alpha:1.0).cgColor
         
@@ -116,12 +112,12 @@ class LoginController: UIViewController , UITextFieldDelegate{
         parolaTF.attributedPlaceholder = NSAttributedString(string: "Parola", attributes: [NSAttributedString.Key.foregroundColor : UIColor(red:0.50, green:0.54, blue:0.59, alpha:1.0)])
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-          self.view.endEditing(true)
-      }
-      
-      func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-          textField.resignFirstResponder()
-          return true
-      }
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }
 

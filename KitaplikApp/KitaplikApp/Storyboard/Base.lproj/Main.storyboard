@@ -11,7 +11,7 @@
         <!--Login Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginController" customModule="KitaplikApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginController" id="BYZ-38-t0r" customClass="LoginController" customModule="KitaplikApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -173,11 +173,22 @@
                         <outlet property="sifremiUnuttumButton" destination="njv-pk-WAq" id="tXE-Gj-svP"/>
                         <outlet property="uyeOlButton" destination="liu-JL-cz6" id="9ib-SE-VAd"/>
                         <outlet property="veyaLabel" destination="5xE-Bb-biV" id="mNX-dN-uoK"/>
+                        <segue destination="CIt-er-0zO" kind="show" identifier="LoginToTabBar" id="8Au-H4-ehA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138.40000000000001" y="109.35960591133005"/>
+        </scene>
+        <!--TabBar-->
+        <scene sceneID="mQv-1T-ubJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TabBar" id="CIt-er-0zO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="SCN-tF-NRv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oaA-jD-85b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="830" y="-181"/>
         </scene>
         <!--uyeOl-->
         <scene sceneID="otQ-o8-VEZ">

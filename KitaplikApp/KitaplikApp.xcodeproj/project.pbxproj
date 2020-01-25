@@ -17,11 +17,25 @@
 		650E3C4C2399BB6500440381 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650E3C4B2399BB6500440381 /* LoginModel.swift */; };
 		650E3C4E2399C44800440381 /* UyeOlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650E3C4D2399C44800440381 /* UyeOlView.swift */; };
 		650E3C502399C46200440381 /* UyeOlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650E3C4F2399C46200440381 /* UyeOlModel.swift */; };
+		65583A6623ABA87A00D62F31 /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65583A6523ABA87A00D62F31 /* HomePageView.swift */; };
+		65583A6823ABA90300D62F31 /* HomePageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65583A6723ABA90300D62F31 /* HomePageModel.swift */; };
+		65583A6A23B2BDE900D62F31 /* SearchBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65583A6923B2BDE900D62F31 /* SearchBar.storyboard */; };
+		65583A6C23B2BE0D00D62F31 /* SearchBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65583A6B23B2BE0D00D62F31 /* SearchBarController.swift */; };
+		65583A6E23B2C21E00D62F31 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65583A6D23B2C21E00D62F31 /* SearchBarView.swift */; };
+		65583A7023B2C32300D62F31 /* SearchBarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65583A6F23B2C32300D62F31 /* SearchBarTableViewCell.swift */; };
+		655AAE0B23A044DA0091F9D2 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655AAE0A23A044DA0091F9D2 /* TabBar.storyboard */; };
+		655AAE0F23A04C6A0091F9D2 /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655AAE0E23A04C6A0091F9D2 /* HomePage.storyboard */; };
+		655AAE1123A066DB0091F9D2 /* HomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655AAE1023A066DB0091F9D2 /* HomePageController.swift */; };
+		655AAE1323A06A650091F9D2 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655AAE1223A06A650091F9D2 /* CollectionViewCell.swift */; };
+		657F003E23D3583E000F8382 /* DetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657F003D23D3583E000F8382 /* DetailsController.swift */; };
+		657F004023D5CDDB000F8382 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657F003F23D5CDDB000F8382 /* DetailsTableViewCell.swift */; };
+		657F004223D8996B000F8382 /* OpenEpubController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657F004123D8996B000F8382 /* OpenEpubController.swift */; };
 		65AC1F56238AA6060058B242 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC1F55238AA6060058B242 /* AppDelegate.swift */; };
 		65AC1F5A238AA6060058B242 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC1F59238AA6060058B242 /* LoginController.swift */; };
 		65AC1F5D238AA6060058B242 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65AC1F5B238AA6060058B242 /* Main.storyboard */; };
 		65AC1F5F238AA6090058B242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65AC1F5E238AA6090058B242 /* Assets.xcassets */; };
 		65AC1F62238AA6090058B242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65AC1F60238AA6090058B242 /* LaunchScreen.storyboard */; };
+		65C08EC923B571A40026CE76 /* burak.js in Resources */ = {isa = PBXBuildFile; fileRef = 65C08EC823B571A40026CE76 /* burak.js */; };
 		65CB4B67238D63B1009A64E3 /* OpenEpubFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CB4B66238D63B1009A64E3 /* OpenEpubFile.swift */; };
 		65CB4B6A238D6451009A64E3 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CB4B69238D6451009A64E3 /* ActivityIndicator.swift */; };
 		88C1D9080C0DB0D3C0F80F06 /* Pods_KitaplikApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375F1F4D3E6DD849E9B2824D /* Pods_KitaplikApp.framework */; };
@@ -39,6 +53,19 @@
 		650E3C4B2399BB6500440381 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		650E3C4D2399C44800440381 /* UyeOlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UyeOlView.swift; sourceTree = "<group>"; };
 		650E3C4F2399C46200440381 /* UyeOlModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UyeOlModel.swift; sourceTree = "<group>"; };
+		65583A6523ABA87A00D62F31 /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		65583A6723ABA90300D62F31 /* HomePageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageModel.swift; sourceTree = "<group>"; };
+		65583A6923B2BDE900D62F31 /* SearchBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchBar.storyboard; sourceTree = "<group>"; };
+		65583A6B23B2BE0D00D62F31 /* SearchBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarController.swift; sourceTree = "<group>"; };
+		65583A6D23B2C21E00D62F31 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		65583A6F23B2C32300D62F31 /* SearchBarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarTableViewCell.swift; sourceTree = "<group>"; };
+		655AAE0A23A044DA0091F9D2 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		655AAE0E23A04C6A0091F9D2 /* HomePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
+		655AAE1023A066DB0091F9D2 /* HomePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageController.swift; sourceTree = "<group>"; };
+		655AAE1223A06A650091F9D2 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		657F003D23D3583E000F8382 /* DetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsController.swift; sourceTree = "<group>"; };
+		657F003F23D5CDDB000F8382 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
+		657F004123D8996B000F8382 /* OpenEpubController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenEpubController.swift; sourceTree = "<group>"; };
 		65AC1F52238AA6060058B242 /* KitaplikApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KitaplikApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65AC1F55238AA6060058B242 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65AC1F59238AA6060058B242 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -46,6 +73,7 @@
 		65AC1F5E238AA6090058B242 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65AC1F61238AA6090058B242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65AC1F63238AA6090058B242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65C08EC823B571A40026CE76 /* burak.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = burak.js; sourceTree = "<group>"; };
 		65CB4B66238D63B1009A64E3 /* OpenEpubFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenEpubFile.swift; sourceTree = "<group>"; };
 		65CB4B69238D6451009A64E3 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		7CC679C0A7E199F06B6FA73C /* Pods-KitaplikApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KitaplikApp.debug.xcconfig"; path = "Target Support Files/Pods-KitaplikApp/Pods-KitaplikApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -79,6 +107,9 @@
 				65AC1F5B238AA6060058B242 /* Main.storyboard */,
 				650E3C4423997C4B00440381 /* uyeOl.storyboard */,
 				6508D7D1239DC3EE00EC2B6B /* SifremiUnuttum.storyboard */,
+				655AAE0A23A044DA0091F9D2 /* TabBar.storyboard */,
+				655AAE0E23A04C6A0091F9D2 /* HomePage.storyboard */,
+				65583A6923B2BDE900D62F31 /* SearchBar.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -114,6 +145,7 @@
 				65AC1F5E238AA6090058B242 /* Assets.xcassets */,
 				65AC1F60238AA6090058B242 /* LaunchScreen.storyboard */,
 				65AC1F63238AA6090058B242 /* Info.plist */,
+				65C08EC823B571A40026CE76 /* burak.js */,
 			);
 			path = KitaplikApp;
 			sourceTree = "<group>";
@@ -124,6 +156,7 @@
 				650E3C4B2399BB6500440381 /* LoginModel.swift */,
 				650E3C4F2399C46200440381 /* UyeOlModel.swift */,
 				6508D7D723A024CA00EC2B6B /* SifremiUnuttumModel.swift */,
+				65583A6723ABA90300D62F31 /* HomePageModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -134,6 +167,8 @@
 				650E3C492399BB5700440381 /* LoginView.swift */,
 				650E3C4D2399C44800440381 /* UyeOlView.swift */,
 				6508D7D523A024C100EC2B6B /* SifremiUnuttumView.swift */,
+				65583A6523ABA87A00D62F31 /* HomePageView.swift */,
+				65583A6D23B2C21E00D62F31 /* SearchBarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -144,6 +179,13 @@
 				65AC1F59238AA6060058B242 /* LoginController.swift */,
 				650E3C4623997C7200440381 /* UyeOlController.swift */,
 				6508D7D3239DC48E00EC2B6B /* SifremiUnuttumController.swift */,
+				655AAE1023A066DB0091F9D2 /* HomePageController.swift */,
+				655AAE1223A06A650091F9D2 /* CollectionViewCell.swift */,
+				65583A6B23B2BE0D00D62F31 /* SearchBarController.swift */,
+				65583A6F23B2C32300D62F31 /* SearchBarTableViewCell.swift */,
+				657F003D23D3583E000F8382 /* DetailsController.swift */,
+				657F003F23D5CDDB000F8382 /* DetailsTableViewCell.swift */,
+				657F004123D8996B000F8382 /* OpenEpubController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -232,10 +274,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				655AAE0B23A044DA0091F9D2 /* TabBar.storyboard in Resources */,
 				65AC1F62238AA6090058B242 /* LaunchScreen.storyboard in Resources */,
+				65C08EC923B571A40026CE76 /* burak.js in Resources */,
 				650E3C4523997C4B00440381 /* uyeOl.storyboard in Resources */,
 				65AC1F5F238AA6090058B242 /* Assets.xcassets in Resources */,
+				655AAE0F23A04C6A0091F9D2 /* HomePage.storyboard in Resources */,
 				65AC1F5D238AA6060058B242 /* Main.storyboard in Resources */,
+				65583A6A23B2BDE900D62F31 /* SearchBar.storyboard in Resources */,
 				6508D7D2239DC3EE00EC2B6B /* SifremiUnuttum.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,12 +338,22 @@
 				6508D7D4239DC48E00EC2B6B /* SifremiUnuttumController.swift in Sources */,
 				650E3C4A2399BB5700440381 /* LoginView.swift in Sources */,
 				6508D7D823A024CA00EC2B6B /* SifremiUnuttumModel.swift in Sources */,
+				657F004223D8996B000F8382 /* OpenEpubController.swift in Sources */,
 				6508D7D623A024C100EC2B6B /* SifremiUnuttumView.swift in Sources */,
+				65583A7023B2C32300D62F31 /* SearchBarTableViewCell.swift in Sources */,
+				65583A6623ABA87A00D62F31 /* HomePageView.swift in Sources */,
+				657F004023D5CDDB000F8382 /* DetailsTableViewCell.swift in Sources */,
+				65583A6823ABA90300D62F31 /* HomePageModel.swift in Sources */,
 				650E3C4C2399BB6500440381 /* LoginModel.swift in Sources */,
 				650E3C4723997C7200440381 /* UyeOlController.swift in Sources */,
+				65583A6C23B2BE0D00D62F31 /* SearchBarController.swift in Sources */,
 				650E3C502399C46200440381 /* UyeOlModel.swift in Sources */,
+				65583A6E23B2C21E00D62F31 /* SearchBarView.swift in Sources */,
+				657F003E23D3583E000F8382 /* DetailsController.swift in Sources */,
 				650E3C4E2399C44800440381 /* UyeOlView.swift in Sources */,
+				655AAE1123A066DB0091F9D2 /* HomePageController.swift in Sources */,
 				65CB4B6A238D6451009A64E3 /* ActivityIndicator.swift in Sources */,
+				655AAE1323A06A650091F9D2 /* CollectionViewCell.swift in Sources */,
 				65AC1F5A238AA6060058B242 /* LoginController.swift in Sources */,
 				65CB4B67238D63B1009A64E3 /* OpenEpubFile.swift in Sources */,
 				65AC1F56238AA6060058B242 /* AppDelegate.swift in Sources */,

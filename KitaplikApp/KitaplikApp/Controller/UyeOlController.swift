@@ -25,38 +25,47 @@ class UyeOlController: UIViewController ,UITextFieldDelegate{
     }
     @IBAction func uyeOlButton(_ sender: Any) {
         self.showSpinner(onView: view)
-        self.uyeOlView.createUser(adSoyad:adSoyadTF.text!, mailAdresi:emailAdresiTF.text! , parola : parolaTF.text!, completionHandler: {
-            Dictionary in print(Dictionary)
-            if(Dictionary == false){
-                DispatchQueue.main.async {
-                    self.removeSpinner()
-                    let alert = UIAlertController(title: "Uyarı", message: self.uyeOlView.errMsg, preferredStyle: .alert)
-                    let okButton = UIAlertAction(title: "Tamam", style: .cancel, handler: nil)
-                    alert.addAction(okButton)
-                    self.present(alert, animated: true, completion: nil)
+        if(parolaTF.text == parolaTekrariTF.text){
+            self.uyeOlView.createUser(adSoyad:adSoyadTF.text!, mailAdresi:emailAdresiTF.text! , parola : parolaTF.text!, completionHandler: {
+                Dictionary in print(Dictionary)
+                if(Dictionary == false){
+                    DispatchQueue.main.async {
+                        self.removeSpinner()
+                        let alert = UIAlertController(title: "Uyarı", message: self.uyeOlView.errMsg, preferredStyle: .alert)
+                        let okButton = UIAlertAction(title: "Tamam", style: .cancel, handler: nil)
+                        alert.addAction(okButton)
+                        self.present(alert, animated: true, completion: nil)
+                    }
                 }
+                else{
+                    DispatchQueue.main.async {
+                        self.removeSpinner()
+                        let transition: CATransition = CATransition()
+                        transition.duration = 0.5
+                        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+                        transition.type = CATransitionType.reveal
+                        transition.subtype = CATransitionSubtype.fromBottom
+                        self.view.window!.layer.add(transition, forKey: nil)
+                        self.dismiss(animated: false, completion: nil)
+                        
+                        
+                    }
+                }
+            })
+        }
+        else{
+            self.removeSpinner()
+            DispatchQueue.main.async {
+                self.removeSpinner()
+                let alert = UIAlertController(title: "Uyarı", message: "Girilen Parolar Uyuşmamaktadır.", preferredStyle: .alert)
+                let okButton = UIAlertAction(title: "Tamam", style: .cancel, handler: nil)
+                alert.addAction(okButton)
+                self.present(alert, animated: true, completion: nil)
             }
-            else{
-                DispatchQueue.main.async {
-                    self.removeSpinner()
-                    let transition: CATransition = CATransition()
-                    transition.duration = 0.5
-                    transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
-                    transition.type = CATransitionType.reveal
-                    transition.subtype = CATransitionSubtype.fromBottom
-                    self.view.window!.layer.add(transition, forKey: nil)
-                    self.dismiss(animated: false, completion: nil)
-                    
-                    
-                }
-                
-                DispatchQueue.main.async {
-                    
-                    //                    self.removeSpinner()
-                    
-                }
-            }
-        })
+        }
+        
+        
+        
     }
     @IBAction func adSoyadTF(_ sender: Any) {
         adSoyadTF.textColor = UIColor(red:0.85, green:0.85, blue:0.85, alpha:1.0)
@@ -145,11 +154,11 @@ class UyeOlController: UIViewController ,UITextFieldDelegate{
         girisYapButton.setTitleColor(UIColor.white, for: .normal)
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-          self.view.endEditing(true)
-      }
-      
-      func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-          textField.resignFirstResponder()
-          return true
-      }
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }
