@@ -10,6 +10,7 @@ import UIKit
 import WebKit
 import JavaScriptCore
 import Foundation
+import FolioReaderKit
 
 class OpenEpubController: UIViewController,WKScriptMessageHandler, WKNavigationDelegate {
     
@@ -20,11 +21,13 @@ class OpenEpubController: UIViewController,WKScriptMessageHandler, WKNavigationD
     @IBOutlet weak var kitapResim: UIImageView!
     @IBOutlet weak var startReadingBttn: UIButton!
     @IBAction func startReadingBttn(_ sender: Any) {
+        doubleTapped(abc: kitapURLepub)
         
     }
     
     var kitapAdi : String = ""
     var kitapURL : String = ""
+    var kitapURLepub : String = ""
     var kitapImg : String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -103,6 +106,8 @@ class OpenEpubController: UIViewController,WKScriptMessageHandler, WKNavigationD
             let a : String = message.body as! String
             print(a)
             print(message.body)
+            kitapURLepub = a
+            
             //  fonksoyin kitap aç
             if let objectString = message.body as? String {
                 guard let data = objectString.data(using: .utf8) else { return }
@@ -139,6 +144,78 @@ class OpenEpubController: UIViewController,WKScriptMessageHandler, WKNavigationD
             //                response in print(response)
             //            })
             //how many years have you been writing ios? 10 yea Senior Developer :)
+        }
+    }
+    func showSavedEpub( fileName:String) {
+        if #available(iOS 10.0, *) {
+            do {
+                let docURL = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+                let contents = try FileManager.default.contentsOfDirectory(at: docURL, includingPropertiesForKeys: [.fileResourceTypeKey], options: .skipsHiddenFiles)
+                for url in contents {
+                    if url.description.contains(fileName) {
+                        // its your file! do what you want with it!
+                        self.open(bookPath: url.path)
+                        break
+                    }
+                }
+            } catch {
+                print("could not locate epub file !!!!!!!")
+            }
+        }
+    }
+    func open(bookPath:String) {
+        let config = FolioReaderConfig()
+        config.shouldHideNavigationOnTap = true
+        config.scrollDirection = .horizontal
+        let folioReader = FolioReader()
+        folioReader.presentReader(parentViewController: self, withEpubPath: bookPath, andConfig: config)
+        self.removeSpinner()
+    }
+    
+    
+    //    Download
+    func doubleTapped(abc : String) {
+        self.showSpinner(onView: self.view)
+        
+//        let abcd = String(abc) // indexPath.item ' ı kitapApi'sinin sonuna ekliyorum. URL olarak veriyorum.
+        if let fileUrl = URL(string: abc) {
+            
+            //    self.indicatorView?.startAnimating()
+            // then lets create your document folder url
+            let documentsDirectoryURL =  FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+            
+            // lets create your destination file url
+            let destinationUrl = documentsDirectoryURL.appendingPathComponent(fileUrl.lastPathComponent+".epub")
+            print(destinationUrl)
+            
+            // to check if it exists before downloading it
+            if FileManager.default.fileExists(atPath: destinationUrl.path) {
+                //       self.indicatorView?.stopAnimating()
+                print("The file already exists at path")
+                // if the file doesn't exist
+                DispatchQueue.main.async {
+                    self.showSavedEpub(fileName:destinationUrl.lastPathComponent)
+                }
+            } else {
+                
+                // you can use NSURLSession.sharedSession to download the data asynchronously
+                URLSession.shared.downloadTask(with: fileUrl) { location, response, error in
+                    guard let location = location, error == nil else { return }
+                    do {
+                        // after downloading your file you need to move it to your destination url
+                        try FileManager.default.moveItem(at: location, to: destinationUrl)
+                        print("DOWNLOAD COMPLETED: File moved to documents folder")
+                        
+                        DispatchQueue.main.async {
+                            //              self.indicatorView?.stopAnimating()
+                            self.showSavedEpub(fileName:destinationUrl.lastPathComponent)
+                        }
+                        
+                    } catch {
+                        print(error)
+                    }
+                }.resume()
+            }
         }
     }
 }

@@ -188,6 +188,7 @@ class SearchBarController: UIViewController,UITableViewDelegate,UITableViewDataS
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         if message.name == callback {
             print("🍎")
+            
             //            print(message.body)
             
             if let objectString = message.body as? String {

@@ -82,6 +82,7 @@ class DetailsController: UIViewController,WKScriptMessageHandler, WKNavigationDe
         if message.name == callback {
             self.removeSpinner()
             print("🍎")
+            
             //            print(message.body)
             
             if let objectString = message.body as? String {
