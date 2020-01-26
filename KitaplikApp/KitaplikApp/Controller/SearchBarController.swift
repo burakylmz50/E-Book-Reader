@@ -50,7 +50,8 @@ class SearchBarController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = searchTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SearchBarTableViewCell
-        cell.searchBarLabel.text = deneme[indexPath.row]
+        
+        cell.searchBarLabel.text = deneme[indexPath.row].capitalized
         
         let backgroundView = UIView()
         backgroundView.backgroundColor = UIColor.clear

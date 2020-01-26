@@ -51,6 +51,9 @@ class DetailsController: UIViewController,WKScriptMessageHandler, WKNavigationDe
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         _ = tableView.cellForRow(at: indexPath) as! DetailsTableViewCell
         labelContent = list[indexPath.row].imgsrc
+        kitapImage = list[indexPath.row].imgurl
+        kitapAdi = list[indexPath.row].header.capitalized
+        
         print(labelContent)
         self.performSegue(withIdentifier: "openEpubURL", sender: indexPath)
     }
@@ -60,11 +63,15 @@ class DetailsController: UIViewController,WKScriptMessageHandler, WKNavigationDe
         // Pass the selected object to the new view controller.
         if segue.identifier == "openEpubURL" {
             if let destVC = segue.destination as? OpenEpubController {
-                destVC.ahmetcik = labelContent
+                destVC.kitapURL = labelContent
+                destVC.kitapImg = kitapImage
+                destVC.kitapAdi = kitapAdi
             }
         }
     }
     var labelContent : String = ""
+     var kitapImage : String = ""
+      var kitapAdi : String = ""
     var deneme2 = [String]()
     var deneme3 = [String]()
     @IBOutlet weak var webView: WKWebView!

@@ -12,32 +12,55 @@ import JavaScriptCore
 import Foundation
 
 class OpenEpubController: UIViewController,WKScriptMessageHandler, WKNavigationDelegate {
-
+    
     
     
     @IBOutlet weak var webView: WKWebView!
-    @IBOutlet weak var epubURL: UILabel!
-    var ahmetcik : String = ""
+    @IBOutlet weak var epubURL: UITextView!
+    @IBOutlet weak var kitapResim: UIImageView!
+    @IBOutlet weak var startReadingBttn: UIButton!
+    @IBAction func startReadingBttn(_ sender: Any) {
+        
+    }
+    
+    var kitapAdi : String = ""
+    var kitapURL : String = ""
+    var kitapImg : String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-        epubURL.text = ahmetcik
+        epubURL.text = kitapAdi
         setupWebView(gulay: abbbc)
         // Do any additional setup after loading the view.
+        kitapResimAcma()
+        kitapResim.layer.cornerRadius = 15
+    }
+    func kitapResimAcma(){
+        let url = URL(string: kitapImg)
+        URLSession.shared.dataTask(with: url!){
+            (data,response,error) in
+            if error != nil{
+                print("error")
+                return
+            }
+            DispatchQueue.main.async {
+                self.kitapResim.image = UIImage(data : data!)
+            }
+        }.resume()
     }
     
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
-          print("Start loading")
-      }
+        print("Start loading")
+    }
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-          print("🐸")
-          webView.evaluateJavaScript("returnJSON()", completionHandler: nil)
-      }
+        print("🐸")
+        webView.evaluateJavaScript("returnJSON()", completionHandler: nil)
+    }
     func setupWebView(gulay:String) {
-//        let Url2 = URL(string: gulay.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "")
-//        let Url3 = Url2?.absoluteString
-//        let searchURL :String = "https://www.pdfdrive.com/search?q="
-//        let sonURL = searchURL + Url3!
-        let sonURL2 = URL(string: ahmetcik)
+        //        let Url2 = URL(string: gulay.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "")
+        //        let Url3 = Url2?.absoluteString
+        //        let searchURL :String = "https://www.pdfdrive.com/search?q="
+        //        let sonURL = searchURL + Url3!
+        let sonURL2 = URL(string: kitapURL)
         
         
         if let url = sonURL2 {
@@ -73,27 +96,27 @@ class OpenEpubController: UIViewController,WKScriptMessageHandler, WKNavigationD
     let callback = "json"
     var abbbc : String = ""
     var sil22 = UIView()
-
+    
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         if message.name == callback {
             print("🍎")
             let a : String = message.body as! String
             print(a)
-                        print(message.body)
-          //  fonksoyin kitap aç 
+            print(message.body)
+            //  fonksoyin kitap aç
             if let objectString = message.body as? String {
                 guard let data = objectString.data(using: .utf8) else { return }
                 
-//                do {
-//                    list = try JSONDecoder().decode([House].self, from: data)
-//
-//                    for i in 0..<list.count{
-//                        print(list[i].imgsrc)
-//                        print("-----------------------")
-//                    }
-////                    detailsTableView.reloadData()
-//                }
-//                catch { print(error) }
+                //                do {
+                //                    list = try JSONDecoder().decode([House].self, from: data)
+                //
+                //                    for i in 0..<list.count{
+                //                        print(list[i].imgsrc)
+                //                        print("-----------------------")
+                //                    }
+                ////                    detailsTableView.reloadData()
+                //                }
+                //                catch { print(error) }
                 //                do {
                 //                    let jsonObject = try JSONSerialization.jsonObject(with: data)
                 //                    if let jsonDictonary = jsonObject as? [Dictionary<String, Any>] {"
