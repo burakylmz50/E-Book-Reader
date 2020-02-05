@@ -11,9 +11,11 @@ import WebKit
 import JavaScriptCore
 import Foundation
 import FolioReaderKit
+import CoreData
 
 class OpenEpubController: UIViewController,WKScriptMessageHandler, WKNavigationDelegate {
     
+   
     
     
     @IBOutlet weak var webView: WKWebView!
@@ -22,8 +24,26 @@ class OpenEpubController: UIViewController,WKScriptMessageHandler, WKNavigationD
     @IBOutlet weak var startReadingBttn: UIButton!
     @IBAction func startReadingBttn(_ sender: Any) {
         doubleTapped(abc: kitapURLepub)
+    }
+    
+    @IBAction func kitapligaEkle(_ sender: Any) {
+        //         self.performSegue(withIdentifier: "goToLibrary", sender: nil)
+        let tabBar = tabBarController as! TabBarController
+        tabBar.myVariable = kitapImg
+        tabBar.kitapLink = kitapURLepub
         
     }
+    
+    //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    //
+    //        // Get the destination  view controller in destVC.
+    //        // Pass the selected object to the new view controller.
+    //        if segue.identifier == "goToLibrary" {
+    //            if let destVC = segue.destination as? MyLibraryController {
+    //                destVC.soba = "ali"
+    //            }
+    //        }
+    //    }
     
     var kitapAdi : String = ""
     var kitapURL : String = ""
@@ -177,7 +197,7 @@ class OpenEpubController: UIViewController,WKScriptMessageHandler, WKNavigationD
     func doubleTapped(abc : String) {
         self.showSpinner(onView: self.view)
         
-//        let abcd = String(abc) // indexPath.item ' ı kitapApi'sinin sonuna ekliyorum. URL olarak veriyorum.
+        //        let abcd = String(abc) // indexPath.item ' ı kitapApi'sinin sonuna ekliyorum. URL olarak veriyorum.
         if let fileUrl = URL(string: abc) {
             
             //    self.indicatorView?.startAnimating()

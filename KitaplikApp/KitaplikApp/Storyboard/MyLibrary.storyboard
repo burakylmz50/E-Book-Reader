@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yLG-gz-mX3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Library-->
+        <scene sceneID="RMy-b2-CY0">
+            <objects>
+                <viewController storyboardIdentifier="MyLibraryController" id="yLG-gz-mX3" customClass="MyLibraryController" customModule="KitaplikApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D5L-Bz-GOY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLQ-ZS-G2M">
+                                <rect key="frame" x="0.0" y="649" width="414" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20.5" id="QCh-LW-Fm3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ERz-Zz-Fu2">
+                                <rect key="frame" x="0.0" y="44" width="414" height="575"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="575" id="Xan-MJ-jXG"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="195" id="osc-Rg-1E7" customClass="MyLibraryTableViewCell" customModule="KitaplikApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="195"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="osc-Rg-1E7" id="Kcz-GH-ieT">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="195"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="38h-wL-hRB">
+                                                    <rect key="frame" x="25" y="11" width="125" height="173"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="173" id="AKg-wI-FIf"/>
+                                                        <constraint firstAttribute="width" constant="125" id="TbT-Hw-umV"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="38h-wL-hRB" firstAttribute="top" secondItem="Kcz-GH-ieT" secondAttribute="top" constant="11" id="7AH-A5-qbo"/>
+                                                <constraint firstItem="38h-wL-hRB" firstAttribute="leading" secondItem="Kcz-GH-ieT" secondAttribute="leading" constant="25" id="Zbk-LH-Ogd"/>
+                                                <constraint firstAttribute="bottom" secondItem="38h-wL-hRB" secondAttribute="bottom" constant="11" id="w3R-6V-qvl"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bookImage" destination="38h-wL-hRB" id="K8M-01-1DS"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="yLG-gz-mX3" id="vFB-EH-rqQ"/>
+                                    <outlet property="delegate" destination="yLG-gz-mX3" id="OpO-m0-Z84"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pOx-gd-8WJ" firstAttribute="trailing" secondItem="yLQ-ZS-G2M" secondAttribute="trailing" id="8Lb-kU-m3b"/>
+                            <constraint firstItem="ERz-Zz-Fu2" firstAttribute="leading" secondItem="pOx-gd-8WJ" secondAttribute="leading" id="LCy-44-REC"/>
+                            <constraint firstItem="ERz-Zz-Fu2" firstAttribute="top" secondItem="pOx-gd-8WJ" secondAttribute="top" id="NJh-99-cx0"/>
+                            <constraint firstItem="yLQ-ZS-G2M" firstAttribute="top" secondItem="ERz-Zz-Fu2" secondAttribute="bottom" constant="30" id="NXc-iD-Ekd"/>
+                            <constraint firstItem="ERz-Zz-Fu2" firstAttribute="trailing" secondItem="pOx-gd-8WJ" secondAttribute="trailing" id="SiB-oV-Unn"/>
+                            <constraint firstItem="yLQ-ZS-G2M" firstAttribute="top" secondItem="ERz-Zz-Fu2" secondAttribute="bottom" constant="30" id="kpj-Td-r8m"/>
+                            <constraint firstItem="yLQ-ZS-G2M" firstAttribute="leading" secondItem="pOx-gd-8WJ" secondAttribute="leading" id="xNR-Un-beZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pOx-gd-8WJ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My Library" image="kitapligim_icon" id="kaD-GS-wlP"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="labelDeneme" destination="yLQ-ZS-G2M" id="1aN-xD-weq"/>
+                        <outlet property="myLibraryTableView" destination="ERz-Zz-Fu2" id="AXR-ob-cHs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4m2-4n-LGP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118.84057971014494" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kitapligim_icon" width="16" height="20.5"/>
+    </resources>
+</document>

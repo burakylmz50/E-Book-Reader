@@ -30,6 +30,7 @@
 		657F003E23D3583E000F8382 /* DetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657F003D23D3583E000F8382 /* DetailsController.swift */; };
 		657F004023D5CDDB000F8382 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657F003F23D5CDDB000F8382 /* DetailsTableViewCell.swift */; };
 		657F004223D8996B000F8382 /* OpenEpubController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657F004123D8996B000F8382 /* OpenEpubController.swift */; };
+		659A0F3C23E3911800B69176 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 659A0F3A23E3911800B69176 /* Model.xcdatamodeld */; };
 		65AC1F56238AA6060058B242 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC1F55238AA6060058B242 /* AppDelegate.swift */; };
 		65AC1F5A238AA6060058B242 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC1F59238AA6060058B242 /* LoginController.swift */; };
 		65AC1F5D238AA6060058B242 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65AC1F5B238AA6060058B242 /* Main.storyboard */; };
@@ -38,6 +39,10 @@
 		65C08EC923B571A40026CE76 /* burak.js in Resources */ = {isa = PBXBuildFile; fileRef = 65C08EC823B571A40026CE76 /* burak.js */; };
 		65CB4B67238D63B1009A64E3 /* OpenEpubFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CB4B66238D63B1009A64E3 /* OpenEpubFile.swift */; };
 		65CB4B6A238D6451009A64E3 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CB4B69238D6451009A64E3 /* ActivityIndicator.swift */; };
+		65D7887723E044B9000F2AA6 /* MyLibrary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D7887623E044B9000F2AA6 /* MyLibrary.storyboard */; };
+		65D7887923E055E5000F2AA6 /* MyLibraryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D7887823E055E5000F2AA6 /* MyLibraryController.swift */; };
+		65D7887B23E08142000F2AA6 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D7887A23E08142000F2AA6 /* TabBarController.swift */; };
+		65D7887D23E1D0D6000F2AA6 /* MyLibraryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D7887C23E1D0D6000F2AA6 /* MyLibraryTableViewCell.swift */; };
 		88C1D9080C0DB0D3C0F80F06 /* Pods_KitaplikApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375F1F4D3E6DD849E9B2824D /* Pods_KitaplikApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +71,7 @@
 		657F003D23D3583E000F8382 /* DetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsController.swift; sourceTree = "<group>"; };
 		657F003F23D5CDDB000F8382 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
 		657F004123D8996B000F8382 /* OpenEpubController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenEpubController.swift; sourceTree = "<group>"; };
+		659A0F3B23E3911800B69176 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		65AC1F52238AA6060058B242 /* KitaplikApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KitaplikApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65AC1F55238AA6060058B242 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65AC1F59238AA6060058B242 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -76,6 +82,10 @@
 		65C08EC823B571A40026CE76 /* burak.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = burak.js; sourceTree = "<group>"; };
 		65CB4B66238D63B1009A64E3 /* OpenEpubFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenEpubFile.swift; sourceTree = "<group>"; };
 		65CB4B69238D6451009A64E3 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		65D7887623E044B9000F2AA6 /* MyLibrary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyLibrary.storyboard; sourceTree = "<group>"; };
+		65D7887823E055E5000F2AA6 /* MyLibraryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLibraryController.swift; sourceTree = "<group>"; };
+		65D7887A23E08142000F2AA6 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		65D7887C23E1D0D6000F2AA6 /* MyLibraryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLibraryTableViewCell.swift; sourceTree = "<group>"; };
 		7CC679C0A7E199F06B6FA73C /* Pods-KitaplikApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KitaplikApp.debug.xcconfig"; path = "Target Support Files/Pods-KitaplikApp/Pods-KitaplikApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D8D373D28E772AE2228E8CBF /* Pods-KitaplikApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KitaplikApp.release.xcconfig"; path = "Target Support Files/Pods-KitaplikApp/Pods-KitaplikApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +120,7 @@
 				655AAE0A23A044DA0091F9D2 /* TabBar.storyboard */,
 				655AAE0E23A04C6A0091F9D2 /* HomePage.storyboard */,
 				65583A6923B2BDE900D62F31 /* SearchBar.storyboard */,
+				65D7887623E044B9000F2AA6 /* MyLibrary.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -117,6 +128,7 @@
 		65AC1F49238AA6060058B242 = {
 			isa = PBXGroup;
 			children = (
+				659A0F3A23E3911800B69176 /* Model.xcdatamodeld */,
 				65AC1F54238AA6060058B242 /* KitaplikApp */,
 				65AC1F53238AA6060058B242 /* Products */,
 				0E7BC4F6E26B89907D580638 /* Pods */,
@@ -176,6 +188,7 @@
 		65CB4B64238D6362009A64E3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				65D7887A23E08142000F2AA6 /* TabBarController.swift */,
 				65AC1F59238AA6060058B242 /* LoginController.swift */,
 				650E3C4623997C7200440381 /* UyeOlController.swift */,
 				6508D7D3239DC48E00EC2B6B /* SifremiUnuttumController.swift */,
@@ -186,6 +199,8 @@
 				657F003D23D3583E000F8382 /* DetailsController.swift */,
 				657F003F23D5CDDB000F8382 /* DetailsTableViewCell.swift */,
 				657F004123D8996B000F8382 /* OpenEpubController.swift */,
+				65D7887823E055E5000F2AA6 /* MyLibraryController.swift */,
+				65D7887C23E1D0D6000F2AA6 /* MyLibraryTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -280,6 +295,7 @@
 				650E3C4523997C4B00440381 /* uyeOl.storyboard in Resources */,
 				65AC1F5F238AA6090058B242 /* Assets.xcassets in Resources */,
 				655AAE0F23A04C6A0091F9D2 /* HomePage.storyboard in Resources */,
+				65D7887723E044B9000F2AA6 /* MyLibrary.storyboard in Resources */,
 				65AC1F5D238AA6060058B242 /* Main.storyboard in Resources */,
 				65583A6A23B2BDE900D62F31 /* SearchBar.storyboard in Resources */,
 				6508D7D2239DC3EE00EC2B6B /* SifremiUnuttum.storyboard in Resources */,
@@ -343,6 +359,10 @@
 				65583A7023B2C32300D62F31 /* SearchBarTableViewCell.swift in Sources */,
 				65583A6623ABA87A00D62F31 /* HomePageView.swift in Sources */,
 				657F004023D5CDDB000F8382 /* DetailsTableViewCell.swift in Sources */,
+				65D7887923E055E5000F2AA6 /* MyLibraryController.swift in Sources */,
+				65D7887D23E1D0D6000F2AA6 /* MyLibraryTableViewCell.swift in Sources */,
+				65D7887B23E08142000F2AA6 /* TabBarController.swift in Sources */,
+				659A0F3C23E3911800B69176 /* Model.xcdatamodeld in Sources */,
 				65583A6823ABA90300D62F31 /* HomePageModel.swift in Sources */,
 				650E3C4C2399BB6500440381 /* LoginModel.swift in Sources */,
 				650E3C4723997C7200440381 /* UyeOlController.swift in Sources */,
@@ -558,6 +578,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		659A0F3A23E3911800B69176 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				659A0F3B23E3911800B69176 /* Model.xcdatamodel */,
+			);
+			currentVersion = 659A0F3B23E3911800B69176 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 65AC1F4A238AA6060058B242 /* Project object */;
 }
