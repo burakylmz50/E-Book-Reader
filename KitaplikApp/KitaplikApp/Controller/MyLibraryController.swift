@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import FolioReaderKit
 
 
 class MyLibraryController: UIViewController ,UITableViewDelegate,UITableViewDataSource{
@@ -29,7 +30,7 @@ class MyLibraryController: UIViewController ,UITableViewDelegate,UITableViewData
         do{
             print("ayse2")
             dizi = try  context.fetch(talep)
-//                        myLibraryTableView.reloadData()
+            //                        myLibraryTableView.reloadData()
         }
         catch{
             print(error.localizedDescription)
@@ -64,8 +65,15 @@ class MyLibraryController: UIViewController ,UITableViewDelegate,UITableViewData
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath)
+        let tabBar = tabBarController as! TabBarController
+                print(dizi[indexPath.row].bookLink)
+                print(dizi[indexPath.row].isim)
+        doubleTapped(abc: dizi[indexPath.row].bookLink!, abc2: indexPath.row)
+        print(indexPath.row)
     }
+    
+
+    
     
     
     @IBOutlet weak var myLibraryTableView: UITableView!
@@ -76,43 +84,43 @@ class MyLibraryController: UIViewController ,UITableViewDelegate,UITableViewData
     var kitaplarLinkleri : [String] = []
     
     override func viewWillAppear(_ animated: Bool) {
-       
+        
         let tabBar = tabBarController as! TabBarController
         // labelDeneme.text = tabBar.myVariable
-       
+        
         if(tabBar.myVariable == ""){
-//             verileriGetir()
+            //             verileriGetir()
         }
         else{
-             let yeniKategeri = Kategori(context: self.context)
+            let yeniKategeri = Kategori(context: self.context)
             if dizi.contains(where: {$0.isim == tabBar.myVariable}) {
                 myLibraryTableView.reloadData()
-               print("var bundan")
+                print("var bundan")
             } else {
-               //item could not be found
-                           soba2.append(tabBar.myVariable)
-                           if(tabBar.myVariable != soba2.last){
-                               
-                           }
-                           else{
-
-                                           yeniKategeri.isim = tabBar.myVariable
-
-                                           
-                                                  dizi.append(yeniKategeri)
-                
-                               //            print("adad" + dizi.last!.isim! + "adasd")
-                               //                print("adad" + dizi.first!.isim! + "adasd")
-                                                  verileriKaydet()
-                                                  
-                                                  myLibraryTableView.reloadData()
-                           }
+                //item could not be found
+                soba2.append(tabBar.myVariable)
+                if(tabBar.myVariable != soba2.last){
+                    
+                }
+                else{
+                    
+                    yeniKategeri.isim = tabBar.myVariable
+                    yeniKategeri.bookLink = tabBar.kitapLink
+                    
+                    dizi.append(yeniKategeri)
+                    
+                    //            print("adad" + dizi.last!.isim! + "adasd")
+                    //                print("adad" + dizi.first!.isim! + "adasd")
+                    verileriKaydet()
+                    
+                    myLibraryTableView.reloadData()
+                }
             }
             print("mustafa")
-
+            
             
         }
-       
+        
         
         
         
@@ -126,6 +134,78 @@ class MyLibraryController: UIViewController ,UITableViewDelegate,UITableViewData
         super.viewDidLoad()
         verileriGetir()
         myLibraryTableView.reloadData()
+    }
+    func showSavedEpub( fileName:String) {
+        if #available(iOS 10.0, *) {
+            do {
+                let docURL = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+                let contents = try FileManager.default.contentsOfDirectory(at: docURL, includingPropertiesForKeys: [.fileResourceTypeKey], options: .skipsHiddenFiles)
+                for url in contents {
+                    if url.description.contains(fileName) {
+                        // its your file! do what you want with it!
+                        self.open(bookPath: url.path)
+                        break
+                    }
+                }
+            } catch {
+                print("could not locate epub file !!!!!!!")
+            }
+        }
+    }
+    func open(bookPath:String) {
+        let config = FolioReaderConfig()
+        config.shouldHideNavigationOnTap = true
+        config.scrollDirection = .horizontal
+        let folioReader = FolioReader()
+        folioReader.presentReader(parentViewController: self, withEpubPath: bookPath, andConfig: config)
+        self.removeSpinner()
+    }
+    
+    
+    //    Download
+    func doubleTapped(abc : String,abc2 : Int) {
+        self.showSpinner(onView: self.view)
+        
+                let abcd = String(abc2)
+        if let fileUrl = URL(string: abc) {
+            
+            //    self.indicatorView?.startAnimating()
+            // then lets create your document folder url
+            let documentsDirectoryURL =  FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+            
+            // lets create your destination file url
+            let destinationUrl = documentsDirectoryURL.appendingPathComponent(fileUrl.lastPathComponent+abcd+".epub")
+            print(destinationUrl)
+            
+            // to check if it exists before downloading it
+            if FileManager.default.fileExists(atPath: destinationUrl.path) {
+                //       self.indicatorView?.stopAnimating()
+                print("The file already exists at path")
+                // if the file doesn't exist
+                DispatchQueue.main.async {
+                    self.showSavedEpub(fileName:destinationUrl.lastPathComponent)
+                }
+            } else {
+                
+                // you can use NSURLSession.sharedSession to download the data asynchronously
+                URLSession.shared.downloadTask(with: fileUrl) { location, response, error in
+                    guard let location = location, error == nil else { return }
+                    do {
+                        // after downloading your file you need to move it to your destination url
+                        try FileManager.default.moveItem(at: location, to: destinationUrl)
+                        print("DOWNLOAD COMPLETED: File moved to documents folder")
+                        
+                        DispatchQueue.main.async {
+                            //              self.indicatorView?.stopAnimating()
+                            self.showSavedEpub(fileName:destinationUrl.lastPathComponent)
+                        }
+                        
+                    } catch {
+                        print(error)
+                    }
+                }.resume()
+            }
+        }
     }
     
 }

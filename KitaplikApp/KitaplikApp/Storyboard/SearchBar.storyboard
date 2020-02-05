@@ -270,9 +270,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="dyX-6J-wqY"/>
                                 </constraints>
-                                <state key="normal" title="Let's! Start Reading"/>
+                                <state key="normal" title="Add to my library"/>
                                 <connections>
-                                    <action selector="startReadingBttn:" destination="7R2-gK-y45" eventType="touchUpInside" id="Oul-GA-WUs"/>
+                                    <action selector="addToMyLibrary:" destination="7R2-gK-y45" eventType="touchUpInside" id="edo-dZ-tPU"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xHl-Dw-H2e">
@@ -281,16 +281,6 @@
                                     <constraint firstAttribute="height" constant="303" id="uIr-SU-c42"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWJ-3K-Elo">
-                                <rect key="frame" x="20" y="531" width="374" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="1a9-CH-hnC"/>
-                                </constraints>
-                                <state key="normal" title="Kitaplığa Ekle"/>
-                                <connections>
-                                    <action selector="kitapligaEkle:" destination="7R2-gK-y45" eventType="touchUpInside" id="l69-5g-uvQ"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -304,19 +294,16 @@
                             <constraint firstItem="v3a-nD-rgf" firstAttribute="trailing" secondItem="RQV-7A-0GQ" secondAttribute="trailing" constant="60" id="Uax-Qp-XB1"/>
                             <constraint firstItem="RQV-7A-0GQ" firstAttribute="leading" secondItem="v3a-nD-rgf" secondAttribute="leading" constant="60" id="bZK-ji-9k7"/>
                             <constraint firstItem="RQV-7A-0GQ" firstAttribute="top" secondItem="xHl-Dw-H2e" secondAttribute="bottom" constant="5" id="cBU-yL-djG"/>
-                            <constraint firstItem="VWJ-3K-Elo" firstAttribute="top" secondItem="Qdv-uX-mON" secondAttribute="bottom" constant="18" id="gsl-7U-iGF"/>
-                            <constraint firstItem="VWJ-3K-Elo" firstAttribute="leading" secondItem="v3a-nD-rgf" secondAttribute="leading" constant="20" id="hOe-dS-TPq"/>
                             <constraint firstItem="Qdv-uX-mON" firstAttribute="leading" secondItem="v3a-nD-rgf" secondAttribute="leading" constant="73" id="rc3-gb-olm"/>
                             <constraint firstItem="v3a-nD-rgf" firstAttribute="trailing" secondItem="xHl-Dw-H2e" secondAttribute="trailing" constant="73" id="s5r-2N-P4e"/>
-                            <constraint firstItem="v3a-nD-rgf" firstAttribute="trailing" secondItem="VWJ-3K-Elo" secondAttribute="trailing" constant="20" id="sYM-zV-J0R"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="v3a-nD-rgf"/>
                     </view>
                     <navigationItem key="navigationItem" id="rdk-rP-rZe"/>
                     <connections>
+                        <outlet property="addToMyLibrary" destination="Qdv-uX-mON" id="0G1-ZL-1GF"/>
                         <outlet property="epubURL" destination="RQV-7A-0GQ" id="w8O-Kr-rsy"/>
                         <outlet property="kitapResim" destination="xHl-Dw-H2e" id="3R5-uA-r78"/>
-                        <outlet property="startReadingBttn" destination="Qdv-uX-mON" id="reP-eJ-E4G"/>
                         <outlet property="webView" destination="i0I-fF-IIY" id="FTp-i4-zDN"/>
                         <segue destination="7wN-kk-tw1" kind="show" identifier="goToLibrary" id="oAk-IY-SnE"/>
                     </connections>
