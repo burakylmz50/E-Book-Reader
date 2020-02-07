@@ -11,4 +11,7 @@ import UIKit
 class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var resimImg: UIImageView!
     
+    override func awakeFromNib() {
+        resimImg.layer.cornerRadius = 30
+    }
 }

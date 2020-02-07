@@ -72,10 +72,6 @@ class MyLibraryController: UIViewController ,UITableViewDelegate,UITableViewData
         print(indexPath.row)
     }
     
-
-    
-    
-    
     @IBOutlet weak var myLibraryTableView: UITableView!
     @IBOutlet weak var labelDeneme: UILabel!
     var soba : String = ""

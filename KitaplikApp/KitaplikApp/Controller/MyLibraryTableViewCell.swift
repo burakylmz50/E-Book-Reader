@@ -13,6 +13,7 @@ class MyLibraryTableViewCell: UITableViewCell {
     @IBOutlet weak var bookImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
+        bookImage.layer.cornerRadius = 15
         // Initialization code
     }
 

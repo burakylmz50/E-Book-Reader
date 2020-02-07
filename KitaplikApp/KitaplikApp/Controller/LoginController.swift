@@ -23,26 +23,26 @@ class LoginController: UIViewController , UITextFieldDelegate{
     @IBOutlet weak var parolaTF: UITextField!
     @IBOutlet weak var girisYapButton: UIButton!
     @IBAction func girisYapButton(_ sender: Any) {
-         self.performSegue(withIdentifier: "LoginToTabBar", sender: self)
-//        self.showSpinner(onView: view)
-//        self.loginView.userLogin(epostaAdresi:emailAdresiTF.text! , parola : parolaTF.text!, completionHandler: {
-//            Dictionary in print(Dictionary)
-//            if(Dictionary == false){
-//                DispatchQueue.main.async {
-//                    self.removeSpinner()
-//                    let alert = UIAlertController(title: "Uyarı", message: self.loginView.errorMessage, preferredStyle: .alert)
-//                    let okButton = UIAlertAction(title: "Tamam", style: .cancel, handler: nil)
-//                    alert.addAction(okButton)
-//                    self.present(alert, animated: true, completion: nil)
-//                }
-//            }
-//            else{
-//                DispatchQueue.main.async {
-//                    self.removeSpinner()
-//                    self.performSegue(withIdentifier: "LoginToTabBar", sender: self)
-//                }
-//            }
-//        })
+        //         self.performSegue(withIdentifier: "LoginToTabBar", sender: self)
+        self.showSpinner(onView: view)
+        self.loginView.userLogin(epostaAdresi:emailAdresiTF.text! , parola : parolaTF.text!, completionHandler: {
+            Dictionary in print(Dictionary)
+            if(Dictionary == false){
+                DispatchQueue.main.async {
+                    self.removeSpinner()
+                    let alert = UIAlertController(title: "Uyarı", message: self.loginView.errorMessage, preferredStyle: .alert)
+                    let okButton = UIAlertAction(title: "Tamam", style: .cancel, handler: nil)
+                    alert.addAction(okButton)
+                    self.present(alert, animated: true, completion: nil)
+                }
+            }
+            else{
+                DispatchQueue.main.async {
+                    self.removeSpinner()
+                    self.performSegue(withIdentifier: "LoginToTabBar", sender: self)
+                }
+            }
+        })
     }
     @IBAction func sifremiUnuttumButton(_ sender: Any) {
     }

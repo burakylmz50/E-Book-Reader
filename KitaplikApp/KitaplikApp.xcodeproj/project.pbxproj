@@ -31,6 +31,7 @@
 		657F004023D5CDDB000F8382 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657F003F23D5CDDB000F8382 /* DetailsTableViewCell.swift */; };
 		657F004223D8996B000F8382 /* OpenEpubController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657F004123D8996B000F8382 /* OpenEpubController.swift */; };
 		659A0F3C23E3911800B69176 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 659A0F3A23E3911800B69176 /* Model.xcdatamodeld */; };
+		659A0F4C23ED608000B69176 /* CollectionViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659A0F4B23ED608000B69176 /* CollectionViewCell2.swift */; };
 		65AC1F56238AA6060058B242 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC1F55238AA6060058B242 /* AppDelegate.swift */; };
 		65AC1F5A238AA6060058B242 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AC1F59238AA6060058B242 /* LoginController.swift */; };
 		65AC1F5D238AA6060058B242 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65AC1F5B238AA6060058B242 /* Main.storyboard */; };
@@ -72,6 +73,7 @@
 		657F003F23D5CDDB000F8382 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
 		657F004123D8996B000F8382 /* OpenEpubController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenEpubController.swift; sourceTree = "<group>"; };
 		659A0F3B23E3911800B69176 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		659A0F4B23ED608000B69176 /* CollectionViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell2.swift; sourceTree = "<group>"; };
 		65AC1F52238AA6060058B242 /* KitaplikApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KitaplikApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65AC1F55238AA6060058B242 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65AC1F59238AA6060058B242 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				6508D7D3239DC48E00EC2B6B /* SifremiUnuttumController.swift */,
 				655AAE1023A066DB0091F9D2 /* HomePageController.swift */,
 				655AAE1223A06A650091F9D2 /* CollectionViewCell.swift */,
+				659A0F4B23ED608000B69176 /* CollectionViewCell2.swift */,
 				65583A6B23B2BE0D00D62F31 /* SearchBarController.swift */,
 				65583A6F23B2C32300D62F31 /* SearchBarTableViewCell.swift */,
 				657F003D23D3583E000F8382 /* DetailsController.swift */,
@@ -366,6 +369,7 @@
 				65583A6823ABA90300D62F31 /* HomePageModel.swift in Sources */,
 				650E3C4C2399BB6500440381 /* LoginModel.swift in Sources */,
 				650E3C4723997C7200440381 /* UyeOlController.swift in Sources */,
+				659A0F4C23ED608000B69176 /* CollectionViewCell2.swift in Sources */,
 				65583A6C23B2BE0D00D62F31 /* SearchBarController.swift in Sources */,
 				650E3C502399C46200440381 /* UyeOlModel.swift in Sources */,
 				65583A6E23B2C21E00D62F31 /* SearchBarView.swift in Sources */,

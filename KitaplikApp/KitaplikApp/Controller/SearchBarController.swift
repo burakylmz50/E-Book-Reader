@@ -119,7 +119,7 @@ class SearchBarController: UIViewController,UITableViewDelegate,UITableViewDataS
         
         
         super.viewDidLoad()
-        setupWebView()
+//        setupWebView()
         //        view.isHidden = true
         
     }
