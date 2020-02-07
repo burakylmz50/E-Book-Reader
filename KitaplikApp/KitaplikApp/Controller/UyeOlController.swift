@@ -31,8 +31,8 @@ class UyeOlController: UIViewController ,UITextFieldDelegate{
                 if(Dictionary == false){
                     DispatchQueue.main.async {
                         self.removeSpinner()
-                        let alert = UIAlertController(title: "Uyarı", message: self.uyeOlView.errMsg, preferredStyle: .alert)
-                        let okButton = UIAlertAction(title: "Tamam", style: .cancel, handler: nil)
+                        let alert = UIAlertController(title: "Warning", message: self.uyeOlView.errMsg, preferredStyle: .alert)
+                        let okButton = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                         alert.addAction(okButton)
                         self.present(alert, animated: true, completion: nil)
                     }
@@ -57,8 +57,8 @@ class UyeOlController: UIViewController ,UITextFieldDelegate{
             self.removeSpinner()
             DispatchQueue.main.async {
                 self.removeSpinner()
-                let alert = UIAlertController(title: "Uyarı", message: "Girilen Parolar Uyuşmamaktadır.", preferredStyle: .alert)
-                let okButton = UIAlertAction(title: "Tamam", style: .cancel, handler: nil)
+                let alert = UIAlertController(title: "Warning", message: "Passwords entered do not match.", preferredStyle: .alert)
+                let okButton = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                 alert.addAction(okButton)
                 self.present(alert, animated: true, completion: nil)
             }
@@ -129,10 +129,10 @@ class UyeOlController: UIViewController ,UITextFieldDelegate{
         parolaTekrariTF.layer.cornerRadius = 15
         uyeOlButton.layer.cornerRadius = 15
         
-        adSoyadTF.attributedPlaceholder = NSAttributedString(string: "İsim, Soyisim", attributes: [NSAttributedString.Key.foregroundColor : UIColor(red:0.50, green:0.54, blue:0.59, alpha:1.0)])
-        emailAdresiTF.attributedPlaceholder = NSAttributedString(string: "E-posta adresi", attributes: [NSAttributedString.Key.foregroundColor : UIColor(red:0.50, green:0.54, blue:0.59, alpha:1.0)])
-        parolaTF.attributedPlaceholder = NSAttributedString(string: "Parola", attributes: [NSAttributedString.Key.foregroundColor : UIColor(red:0.50, green:0.54, blue:0.59, alpha:1.0)])
-        parolaTekrariTF.attributedPlaceholder = NSAttributedString(string: "Parola (Tekrar)", attributes: [NSAttributedString.Key.foregroundColor : UIColor(red:0.50, green:0.54, blue:0.59, alpha:1.0)])
+        adSoyadTF.attributedPlaceholder = NSAttributedString(string: "Name, Surname", attributes: [NSAttributedString.Key.foregroundColor : UIColor(red:0.50, green:0.54, blue:0.59, alpha:1.0)])
+        emailAdresiTF.attributedPlaceholder = NSAttributedString(string: "E-mail address", attributes: [NSAttributedString.Key.foregroundColor : UIColor(red:0.50, green:0.54, blue:0.59, alpha:1.0)])
+        parolaTF.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor : UIColor(red:0.50, green:0.54, blue:0.59, alpha:1.0)])
+        parolaTekrariTF.attributedPlaceholder = NSAttributedString(string: "Password (Again)", attributes: [NSAttributedString.Key.foregroundColor : UIColor(red:0.50, green:0.54, blue:0.59, alpha:1.0)])
         
         uyeOlButton.layer.borderWidth = 1.0
         uyeOlButton.layer.borderColor = UIColor(red:0.59, green:0.59, blue:0.59, alpha:1.0).cgColor

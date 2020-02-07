@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:KitaplikApp.xcodeproj">
+      location = "group:/Users/burakyilmaz/Documents/GitHub/E-Book-Reader/KitaplikApp/Bookhub.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

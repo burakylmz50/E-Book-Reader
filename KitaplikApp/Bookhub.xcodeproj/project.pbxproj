@@ -74,7 +74,7 @@
 		657F004123D8996B000F8382 /* OpenEpubController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenEpubController.swift; sourceTree = "<group>"; };
 		659A0F3B23E3911800B69176 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		659A0F4B23ED608000B69176 /* CollectionViewCell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell2.swift; sourceTree = "<group>"; };
-		65AC1F52238AA6060058B242 /* KitaplikApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KitaplikApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65AC1F52238AA6060058B242 /* Bookhub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookhub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65AC1F55238AA6060058B242 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65AC1F59238AA6060058B242 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		65AC1F5C238AA6060058B242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -141,7 +141,7 @@
 		65AC1F53238AA6060058B242 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				65AC1F52238AA6060058B242 /* KitaplikApp.app */,
+				65AC1F52238AA6060058B242 /* Bookhub.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -235,9 +235,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		65AC1F51238AA6060058B242 /* KitaplikApp */ = {
+		65AC1F51238AA6060058B242 /* Bookhub */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 65AC1F66238AA6090058B242 /* Build configuration list for PBXNativeTarget "KitaplikApp" */;
+			buildConfigurationList = 65AC1F66238AA6090058B242 /* Build configuration list for PBXNativeTarget "Bookhub" */;
 			buildPhases = (
 				62B9F2EDDA42227B7F018AB8 /* [CP] Check Pods Manifest.lock */,
 				65AC1F4E238AA6060058B242 /* Sources */,
@@ -249,9 +249,9 @@
 			);
 			dependencies = (
 			);
-			name = KitaplikApp;
+			name = Bookhub;
 			productName = KitaplikApp;
-			productReference = 65AC1F52238AA6060058B242 /* KitaplikApp.app */;
+			productReference = 65AC1F52238AA6060058B242 /* Bookhub.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -269,7 +269,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 65AC1F4D238AA6060058B242 /* Build configuration list for PBXProject "KitaplikApp" */;
+			buildConfigurationList = 65AC1F4D238AA6060058B242 /* Build configuration list for PBXProject "Bookhub" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -282,7 +282,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				65AC1F51238AA6060058B242 /* KitaplikApp */,
+				65AC1F51238AA6060058B242 /* Bookhub */,
 			);
 		};
 /* End PBXProject section */
@@ -533,7 +533,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.KitaplikApp;
+				MARKETING_VERSION = 1.7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.epubDeneme66;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -553,7 +554,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.KitaplikApp;
+				MARKETING_VERSION = 1.7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.epubDeneme66;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -563,7 +565,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		65AC1F4D238AA6060058B242 /* Build configuration list for PBXProject "KitaplikApp" */ = {
+		65AC1F4D238AA6060058B242 /* Build configuration list for PBXProject "Bookhub" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				65AC1F64238AA6090058B242 /* Debug */,
@@ -572,7 +574,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		65AC1F66238AA6090058B242 /* Build configuration list for PBXNativeTarget "KitaplikApp" */ = {
+		65AC1F66238AA6090058B242 /* Build configuration list for PBXNativeTarget "Bookhub" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				65AC1F67238AA6090058B242 /* Debug */,

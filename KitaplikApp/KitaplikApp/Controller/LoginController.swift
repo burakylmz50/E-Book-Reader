@@ -30,8 +30,8 @@ class LoginController: UIViewController , UITextFieldDelegate{
             if(Dictionary == false){
                 DispatchQueue.main.async {
                     self.removeSpinner()
-                    let alert = UIAlertController(title: "Uyarı", message: self.loginView.errorMessage, preferredStyle: .alert)
-                    let okButton = UIAlertAction(title: "Tamam", style: .cancel, handler: nil)
+                    let alert = UIAlertController(title: "Warning", message: self.loginView.errorMessage, preferredStyle: .alert)
+                    let okButton = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                     alert.addAction(okButton)
                     self.present(alert, animated: true, completion: nil)
                 }
@@ -108,8 +108,8 @@ class LoginController: UIViewController , UITextFieldDelegate{
         girisYapButton.layer.borderColor = UIColor(red:0.59, green:0.59, blue:0.59, alpha:1.0).cgColor
         
         
-        emailAdresiTF.attributedPlaceholder = NSAttributedString(string: "E-posta adresi", attributes: [NSAttributedString.Key.foregroundColor : UIColor(red:0.50, green:0.54, blue:0.59, alpha:1.0)])
-        parolaTF.attributedPlaceholder = NSAttributedString(string: "Parola", attributes: [NSAttributedString.Key.foregroundColor : UIColor(red:0.50, green:0.54, blue:0.59, alpha:1.0)])
+        emailAdresiTF.attributedPlaceholder = NSAttributedString(string: "E-mail address", attributes: [NSAttributedString.Key.foregroundColor : UIColor(red:0.50, green:0.54, blue:0.59, alpha:1.0)])
+        parolaTF.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor : UIColor(red:0.50, green:0.54, blue:0.59, alpha:1.0)])
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)

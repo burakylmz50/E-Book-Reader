@@ -11,12 +11,12 @@
         <!--Uye Ol Controller-->
         <scene sceneID="4wM-uT-kXI">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="0dV-ip-AAf" customClass="UyeOlController" customModule="KitaplikApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="0dV-ip-AAf" customClass="UyeOlController" customModule="Bookhub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9mk-Jj-Dhl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Üye Ol" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFu-bD-kEH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JFu-bD-kEH">
                                 <rect key="frame" x="20" y="61" width="374" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="wzC-7Y-SZ6"/>
@@ -78,7 +78,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="58" id="YYv-XN-M3R"/>
                                 </constraints>
-                                <state key="normal" title="Üye Ol"/>
+                                <state key="normal" title="Sign up"/>
                                 <connections>
                                     <action selector="uyeOlButton:" destination="0dV-ip-AAf" eventType="touchUpInside" id="iIs-En-bff"/>
                                 </connections>
