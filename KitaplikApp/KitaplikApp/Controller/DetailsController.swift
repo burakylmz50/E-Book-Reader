@@ -146,6 +146,7 @@ class DetailsController: UIViewController,WKScriptMessageHandler, WKNavigationDe
         super.viewDidLoad()
           view.backgroundColor = UIColor(red:0.07, green:0.09, blue:0.13, alpha:1.0)
         detailsTableView.backgroundColor = UIColor(red:0.07, green:0.09, blue:0.13, alpha:1.0)
+        self.detailsTableView.separatorStyle = .none
         self.navigationController?.navigationBar.topItem?.title = "Search Books"
         print("sevval aşırı çok güzel :)")
         

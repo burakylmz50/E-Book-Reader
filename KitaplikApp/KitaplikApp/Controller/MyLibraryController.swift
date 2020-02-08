@@ -86,6 +86,14 @@ class MyLibraryController: UIViewController ,UITableViewDelegate,UITableViewData
         
         if(tabBar.myVariable == ""){
             //             verileriGetir()
+            if(dizi.count == 0){
+                let alert = UIAlertController(title: "We are so sorry.", message: "You have not added any books to your library so far.", preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {(action: UIAlertAction!) in myFunc()}))
+                self.present(alert, animated: true, completion: nil)
+            }
+            func myFunc(){
+                self.performSegue(withIdentifier: "myLibraryToTabBar", sender: nil)
+            }
         }
         else{
             let yeniKategeri = Kategori(context: self.context)
@@ -128,14 +136,7 @@ class MyLibraryController: UIViewController ,UITableViewDelegate,UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if(dizi.count == 0){
-            let alert = UIAlertController(title: "We are so sorry.", message: "You have not added any books to your library so far.", preferredStyle: UIAlertController.Style.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {(action: UIAlertAction!) in myFunc()}))
-            self.present(alert, animated: true, completion: nil)
-        }
-        func myFunc(){
-            self.performSegue(withIdentifier: "myLibraryToTabBar", sender: nil)
-        }
+        
         verileriGetir()
         self.myLibraryTableView.separatorStyle = .none
         myLibraryTableView.reloadData()
