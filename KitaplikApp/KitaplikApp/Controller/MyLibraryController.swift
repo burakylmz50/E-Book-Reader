@@ -66,8 +66,8 @@ class MyLibraryController: UIViewController ,UITableViewDelegate,UITableViewData
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let tabBar = tabBarController as! TabBarController
-                print(dizi[indexPath.row].bookLink)
-                print(dizi[indexPath.row].isim)
+        print(dizi[indexPath.row].bookLink)
+        print(dizi[indexPath.row].isim)
         doubleTapped(abc: dizi[indexPath.row].bookLink!, abc2: indexPath.row)
         print(indexPath.row)
     }
@@ -128,7 +128,16 @@ class MyLibraryController: UIViewController ,UITableViewDelegate,UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if(dizi.count == 0){
+            let alert = UIAlertController(title: "We are so sorry.", message: "You have not added any books to your library so far.", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: {(action: UIAlertAction!) in myFunc()}))
+            self.present(alert, animated: true, completion: nil)
+        }
+        func myFunc(){
+            self.performSegue(withIdentifier: "myLibraryToTabBar", sender: nil)
+        }
         verileriGetir()
+        self.myLibraryTableView.separatorStyle = .none
         myLibraryTableView.reloadData()
     }
     func showSavedEpub( fileName:String) {
@@ -162,7 +171,7 @@ class MyLibraryController: UIViewController ,UITableViewDelegate,UITableViewData
     func doubleTapped(abc : String,abc2 : Int) {
         self.showSpinner(onView: self.view)
         
-                let abcd = String(abc2)
+        let abcd = String(abc2)
         if let fileUrl = URL(string: abc) {
             
             //    self.indicatorView?.startAnimating()

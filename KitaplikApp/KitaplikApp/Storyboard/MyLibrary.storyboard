@@ -8,10 +8,20 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--TabBar-->
+        <scene sceneID="pgw-Sg-mE5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TabBar" id="XpA-ca-tMg" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="cnn-KG-L8G"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R6R-l3-8G3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-887" y="113"/>
+        </scene>
         <!--My Library-->
         <scene sceneID="RMy-b2-CY0">
             <objects>
-                <viewController storyboardIdentifier="MyLibraryController" id="yLG-gz-mX3" customClass="MyLibraryController" customModule="KitaplikApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyLibraryController" id="yLG-gz-mX3" customClass="MyLibraryController" customModule="Bookhub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D5L-Bz-GOY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,7 +42,7 @@
                                     <constraint firstAttribute="height" constant="575" id="Xan-MJ-jXG"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="195" id="osc-Rg-1E7" customClass="MyLibraryTableViewCell" customModule="KitaplikApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="195" id="osc-Rg-1E7" customClass="MyLibraryTableViewCell" customModule="Bookhub" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="195"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="osc-Rg-1E7" id="Kcz-GH-ieT">
@@ -81,6 +91,7 @@
                     <connections>
                         <outlet property="labelDeneme" destination="yLQ-ZS-G2M" id="1aN-xD-weq"/>
                         <outlet property="myLibraryTableView" destination="ERz-Zz-Fu2" id="AXR-ob-cHs"/>
+                        <segue destination="XpA-ca-tMg" kind="show" identifier="myLibraryToTabBar" id="Qxg-yR-hO9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4m2-4n-LGP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

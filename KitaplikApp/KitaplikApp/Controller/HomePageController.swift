@@ -47,7 +47,10 @@ class HomePageController: UIViewController ,UICollectionViewDelegate,UICollectio
         if(collectionView == cView2){
             doubleTapped(abc: staticBookURL2[indexPath.row], abc2: indexPath.row)
         }
-        doubleTapped(abc: staticBookURL[indexPath.row], abc2: indexPath.row)
+        else{
+            doubleTapped(abc: staticBookURL[indexPath.row], abc2: indexPath.row+20)
+        }
+        
     }
     
     
@@ -83,6 +86,7 @@ class HomePageController: UIViewController ,UICollectionViewDelegate,UICollectio
                 for url in contents {
                     if url.description.contains(fileName) {
                         // its your file! do what you want with it!
+                        self.removeSpinner()
                         self.open(bookPath: url.path)
                         break
                     }
@@ -93,12 +97,13 @@ class HomePageController: UIViewController ,UICollectionViewDelegate,UICollectio
         }
     }
     func open(bookPath:String) {
+        self.removeSpinner()
         let config = FolioReaderConfig()
         config.shouldHideNavigationOnTap = true
         config.scrollDirection = .horizontal
         let folioReader = FolioReader()
         folioReader.presentReader(parentViewController: self, withEpubPath: bookPath, andConfig: config)
-        self.removeSpinner()
+        
     }
     
     
@@ -120,9 +125,11 @@ class HomePageController: UIViewController ,UICollectionViewDelegate,UICollectio
             // to check if it exists before downloading it
             if FileManager.default.fileExists(atPath: destinationUrl.path) {
                 //       self.indicatorView?.stopAnimating()
+                self.removeSpinner()
                 print("The file already exists at path")
                 // if the file doesn't exist
                 DispatchQueue.main.async {
+                    self.removeSpinner()
                     self.showSavedEpub(fileName:destinationUrl.lastPathComponent)
                 }
             } else {
