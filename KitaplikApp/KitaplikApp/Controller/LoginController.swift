@@ -16,8 +16,12 @@ import FolioReaderKit
 
 class LoginController: UIViewController , UITextFieldDelegate{
     
+    var girdiMi : Bool = false
     var iconClick = true
     var loginView = LoginView()
+    
+    let defaults = UserDefaults.standard
+    
     @IBOutlet weak var girisYapLabel: UILabel!
     @IBOutlet weak var emailAdresiTF: UITextField!
     @IBOutlet weak var parolaTF: UITextField!
@@ -39,6 +43,7 @@ class LoginController: UIViewController , UITextFieldDelegate{
             else{
                 DispatchQueue.main.async {
                     self.removeSpinner()
+                    self.defaults.set(true, forKey: "girdiMi")
                     self.performSegue(withIdentifier: "LoginToTabBar", sender: self)
                 }
             }

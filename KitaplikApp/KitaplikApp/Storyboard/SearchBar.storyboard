@@ -11,7 +11,7 @@
         <!--Search Bar Controller-->
         <scene sceneID="MhG-e1-uX4">
             <objects>
-                <viewController id="hwz-Ae-Kz3" customClass="SearchBarController" customModule="KitaplikApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hwz-Ae-Kz3" customClass="SearchBarController" customModule="Bookhub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ehv-vg-jWG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,7 +43,7 @@
                                 <rect key="frame" x="20" y="182" width="374" height="611"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="60" id="djC-z5-jpk" customClass="SearchBarTableViewCell" customModule="KitaplikApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="60" id="djC-z5-jpk" customClass="SearchBarTableViewCell" customModule="Bookhub" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="374" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="djC-z5-jpk" id="CoA-aC-q5N">
@@ -121,7 +121,7 @@
         <!--Details Controller-->
         <scene sceneID="i6s-Eu-Rfh">
             <objects>
-                <viewController id="ebz-EW-WsM" customClass="DetailsController" customModule="KitaplikApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ebz-EW-WsM" customClass="DetailsController" customModule="Bookhub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rh7-Vd-dyN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -138,7 +138,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="188" id="zJr-XK-ktE" customClass="DetailsTableViewCell" customModule="KitaplikApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="188" id="zJr-XK-ktE" customClass="DetailsTableViewCell" customModule="Bookhub" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="188"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zJr-XK-ktE" id="pBM-a5-ejv">
@@ -239,7 +239,7 @@
         <!--Open Epub Controller-->
         <scene sceneID="fCx-1r-c1u">
             <objects>
-                <viewController storyboardIdentifier="OpenEpubController" id="7R2-gK-y45" customClass="OpenEpubController" customModule="KitaplikApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OpenEpubController" id="7R2-gK-y45" customClass="OpenEpubController" customModule="Bookhub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gak-LY-v92">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -281,6 +281,12 @@
                                     <constraint firstAttribute="height" constant="303" id="uIr-SU-c42"/>
                                 </constraints>
                             </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="xNF-JF-y0u">
+                                <rect key="frame" x="197" y="521" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Qo2-Ah-4xf"/>
+                                </constraints>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -288,12 +294,15 @@
                             <constraint firstItem="v3a-nD-rgf" firstAttribute="bottom" secondItem="i0I-fF-IIY" secondAttribute="bottom" constant="40" id="2Q7-7S-WBx"/>
                             <constraint firstItem="xHl-Dw-H2e" firstAttribute="top" secondItem="v3a-nD-rgf" secondAttribute="top" constant="5" id="6ym-M7-ReR"/>
                             <constraint firstItem="Qdv-uX-mON" firstAttribute="top" secondItem="RQV-7A-0GQ" secondAttribute="bottom" constant="30" id="A4a-xk-ZF2"/>
+                            <constraint firstItem="v3a-nD-rgf" firstAttribute="trailing" secondItem="xNF-JF-y0u" secondAttribute="trailing" constant="197" id="An2-x2-TkY"/>
                             <constraint firstItem="v3a-nD-rgf" firstAttribute="trailing" secondItem="i0I-fF-IIY" secondAttribute="trailing" constant="87" id="CTz-Xf-Htr"/>
                             <constraint firstItem="xHl-Dw-H2e" firstAttribute="leading" secondItem="v3a-nD-rgf" secondAttribute="leading" constant="73" id="DdW-tw-dkX"/>
+                            <constraint firstItem="xNF-JF-y0u" firstAttribute="top" secondItem="Qdv-uX-mON" secondAttribute="bottom" constant="8" id="Ls5-NW-sI1"/>
                             <constraint firstItem="i0I-fF-IIY" firstAttribute="leading" secondItem="v3a-nD-rgf" secondAttribute="leading" constant="87" id="Ttb-X1-qmA"/>
                             <constraint firstItem="v3a-nD-rgf" firstAttribute="trailing" secondItem="RQV-7A-0GQ" secondAttribute="trailing" constant="60" id="Uax-Qp-XB1"/>
                             <constraint firstItem="RQV-7A-0GQ" firstAttribute="leading" secondItem="v3a-nD-rgf" secondAttribute="leading" constant="60" id="bZK-ji-9k7"/>
                             <constraint firstItem="RQV-7A-0GQ" firstAttribute="top" secondItem="xHl-Dw-H2e" secondAttribute="bottom" constant="5" id="cBU-yL-djG"/>
+                            <constraint firstItem="xNF-JF-y0u" firstAttribute="leading" secondItem="v3a-nD-rgf" secondAttribute="leading" constant="197" id="mSe-6J-NgG"/>
                             <constraint firstItem="Qdv-uX-mON" firstAttribute="leading" secondItem="v3a-nD-rgf" secondAttribute="leading" constant="73" id="rc3-gb-olm"/>
                             <constraint firstItem="v3a-nD-rgf" firstAttribute="trailing" secondItem="xHl-Dw-H2e" secondAttribute="trailing" constant="73" id="s5r-2N-P4e"/>
                         </constraints>
@@ -301,6 +310,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="rdk-rP-rZe"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="xNF-JF-y0u" id="hNN-Q1-6pp"/>
                         <outlet property="addToMyLibrary" destination="Qdv-uX-mON" id="0G1-ZL-1GF"/>
                         <outlet property="epubURL" destination="RQV-7A-0GQ" id="w8O-Kr-rsy"/>
                         <outlet property="kitapResim" destination="xHl-Dw-H2e" id="3R5-uA-r78"/>

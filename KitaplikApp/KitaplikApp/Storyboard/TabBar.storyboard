@@ -10,7 +10,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="JFV-EP-mVl">
             <objects>
-                <tabBarController storyboardIdentifier="TabBar" modalPresentationStyle="fullScreen" id="Jd9-Lz-Q0r" customClass="TabBarController" customModule="KitaplikApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" modalPresentationStyle="fullScreen" id="Jd9-Lz-Q0r" customClass="TabBarController" customModule="Bookhub" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="evn-1Z-dEj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

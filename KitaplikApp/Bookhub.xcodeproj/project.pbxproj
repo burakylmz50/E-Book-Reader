@@ -38,6 +38,7 @@
 		65AC1F5F238AA6090058B242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65AC1F5E238AA6090058B242 /* Assets.xcassets */; };
 		65AC1F62238AA6090058B242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65AC1F60238AA6090058B242 /* LaunchScreen.storyboard */; };
 		65C08EC923B571A40026CE76 /* burak.js in Resources */ = {isa = PBXBuildFile; fileRef = 65C08EC823B571A40026CE76 /* burak.js */; };
+		65C466E22412A771003CF3E4 /* CollectionViewCell3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C466E12412A771003CF3E4 /* CollectionViewCell3.swift */; };
 		65CB4B67238D63B1009A64E3 /* OpenEpubFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CB4B66238D63B1009A64E3 /* OpenEpubFile.swift */; };
 		65CB4B6A238D6451009A64E3 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CB4B69238D6451009A64E3 /* ActivityIndicator.swift */; };
 		65D7887723E044B9000F2AA6 /* MyLibrary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D7887623E044B9000F2AA6 /* MyLibrary.storyboard */; };
@@ -82,6 +83,7 @@
 		65AC1F61238AA6090058B242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65AC1F63238AA6090058B242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65C08EC823B571A40026CE76 /* burak.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = burak.js; sourceTree = "<group>"; };
+		65C466E12412A771003CF3E4 /* CollectionViewCell3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell3.swift; sourceTree = "<group>"; };
 		65CB4B66238D63B1009A64E3 /* OpenEpubFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenEpubFile.swift; sourceTree = "<group>"; };
 		65CB4B69238D6451009A64E3 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		65D7887623E044B9000F2AA6 /* MyLibrary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyLibrary.storyboard; sourceTree = "<group>"; };
@@ -164,6 +166,26 @@
 			path = KitaplikApp;
 			sourceTree = "<group>";
 		};
+		65C466E72412A989003CF3E4 /* CVCell */ = {
+			isa = PBXGroup;
+			children = (
+				655AAE1223A06A650091F9D2 /* CollectionViewCell.swift */,
+				659A0F4B23ED608000B69176 /* CollectionViewCell2.swift */,
+				65C466E12412A771003CF3E4 /* CollectionViewCell3.swift */,
+			);
+			path = CVCell;
+			sourceTree = "<group>";
+		};
+		65C466E82412A99B003CF3E4 /* TVCell */ = {
+			isa = PBXGroup;
+			children = (
+				65583A6F23B2C32300D62F31 /* SearchBarTableViewCell.swift */,
+				657F003F23D5CDDB000F8382 /* DetailsTableViewCell.swift */,
+				65D7887C23E1D0D6000F2AA6 /* MyLibraryTableViewCell.swift */,
+			);
+			path = TVCell;
+			sourceTree = "<group>";
+		};
 		65CB4B62238D6358009A64E3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,20 +212,17 @@
 		65CB4B64238D6362009A64E3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				65C466E82412A99B003CF3E4 /* TVCell */,
+				65C466E72412A989003CF3E4 /* CVCell */,
 				65D7887A23E08142000F2AA6 /* TabBarController.swift */,
 				65AC1F59238AA6060058B242 /* LoginController.swift */,
 				650E3C4623997C7200440381 /* UyeOlController.swift */,
 				6508D7D3239DC48E00EC2B6B /* SifremiUnuttumController.swift */,
 				655AAE1023A066DB0091F9D2 /* HomePageController.swift */,
-				655AAE1223A06A650091F9D2 /* CollectionViewCell.swift */,
-				659A0F4B23ED608000B69176 /* CollectionViewCell2.swift */,
 				65583A6B23B2BE0D00D62F31 /* SearchBarController.swift */,
-				65583A6F23B2C32300D62F31 /* SearchBarTableViewCell.swift */,
 				657F003D23D3583E000F8382 /* DetailsController.swift */,
-				657F003F23D5CDDB000F8382 /* DetailsTableViewCell.swift */,
 				657F004123D8996B000F8382 /* OpenEpubController.swift */,
 				65D7887823E055E5000F2AA6 /* MyLibraryController.swift */,
-				65D7887C23E1D0D6000F2AA6 /* MyLibraryTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -380,6 +399,7 @@
 				655AAE1323A06A650091F9D2 /* CollectionViewCell.swift in Sources */,
 				65AC1F5A238AA6060058B242 /* LoginController.swift in Sources */,
 				65CB4B67238D63B1009A64E3 /* OpenEpubFile.swift in Sources */,
+				65C466E22412A771003CF3E4 /* CollectionViewCell3.swift in Sources */,
 				65AC1F56238AA6060058B242 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,7 +553,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.7;
+				MARKETING_VERSION = 1.9.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.epubDeneme66;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -554,7 +574,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.7;
+				MARKETING_VERSION = 1.9.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.epubDeneme66;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

@@ -16,6 +16,7 @@ import CoreData
 class OpenEpubController: UIViewController,WKScriptMessageHandler, WKNavigationDelegate {
     
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     
     @IBOutlet weak var webView: WKWebView!
@@ -47,6 +48,8 @@ class OpenEpubController: UIViewController,WKScriptMessageHandler, WKNavigationD
     var kitapURLepub : String = ""
     var kitapImg : String = ""
     override func viewDidLoad() {
+        
+                activityIndicator.startAnimating()
         super.viewDidLoad()
         padding()
         let alert = UIAlertController(title: "İnformation", message: "If the book is available in our system, the button will be active.", preferredStyle: UIAlertController.Style.alert)
@@ -135,6 +138,8 @@ class OpenEpubController: UIViewController,WKScriptMessageHandler, WKNavigationD
     
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         if message.name == callback {
+            activityIndicator.stopAnimating()
+            activityIndicator.isHidden = false
             print("🍎")
             let a : String = message.body as! String
             print(a)

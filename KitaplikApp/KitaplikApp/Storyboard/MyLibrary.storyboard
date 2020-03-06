@@ -26,15 +26,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLQ-ZS-G2M">
-                                <rect key="frame" x="0.0" y="649" width="414" height="20.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20.5" id="QCh-LW-Fm3"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ERz-Zz-Fu2">
                                 <rect key="frame" x="0.0" y="44" width="414" height="575"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -76,20 +67,15 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="pOx-gd-8WJ" firstAttribute="trailing" secondItem="yLQ-ZS-G2M" secondAttribute="trailing" id="8Lb-kU-m3b"/>
                             <constraint firstItem="ERz-Zz-Fu2" firstAttribute="leading" secondItem="pOx-gd-8WJ" secondAttribute="leading" id="LCy-44-REC"/>
                             <constraint firstItem="ERz-Zz-Fu2" firstAttribute="top" secondItem="pOx-gd-8WJ" secondAttribute="top" id="NJh-99-cx0"/>
-                            <constraint firstItem="yLQ-ZS-G2M" firstAttribute="top" secondItem="ERz-Zz-Fu2" secondAttribute="bottom" constant="30" id="NXc-iD-Ekd"/>
                             <constraint firstItem="ERz-Zz-Fu2" firstAttribute="trailing" secondItem="pOx-gd-8WJ" secondAttribute="trailing" id="SiB-oV-Unn"/>
-                            <constraint firstItem="yLQ-ZS-G2M" firstAttribute="top" secondItem="ERz-Zz-Fu2" secondAttribute="bottom" constant="30" id="kpj-Td-r8m"/>
-                            <constraint firstItem="yLQ-ZS-G2M" firstAttribute="leading" secondItem="pOx-gd-8WJ" secondAttribute="leading" id="xNR-Un-beZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pOx-gd-8WJ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="My Library" image="kitapligim_icon" id="kaD-GS-wlP"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="labelDeneme" destination="yLQ-ZS-G2M" id="1aN-xD-weq"/>
                         <outlet property="myLibraryTableView" destination="ERz-Zz-Fu2" id="AXR-ob-cHs"/>
                         <segue destination="XpA-ca-tMg" kind="show" identifier="myLibraryToTabBar" id="Qxg-yR-hO9"/>
                     </connections>

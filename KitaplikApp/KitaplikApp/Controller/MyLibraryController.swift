@@ -73,7 +73,6 @@ class MyLibraryController: UIViewController ,UITableViewDelegate,UITableViewData
     }
     
     @IBOutlet weak var myLibraryTableView: UITableView!
-    @IBOutlet weak var labelDeneme: UILabel!
     var soba : String = ""
     var soba2 : [String] = []
     

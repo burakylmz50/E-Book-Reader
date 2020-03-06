@@ -26,7 +26,7 @@ class SearchBarView{
                             let decoder = JSONDecoder()
                             let gitData = try decoder.decode(searchFirst.self, from: data!)
                             let (suggestionsCount) : Int = gitData.suggestions!.count
-                            if(suggestionsCount>3){
+                            if(suggestionsCount>1){
                                 for index in 0...(suggestionsCount-1){
                                     self.sevval.append(gitData.suggestions![index])
                                 }

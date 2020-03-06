@@ -15,6 +15,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        if(UserDefaults.standard.bool(forKey: "girdiMi") == true){
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+
+            // Grab a reference to whichever storyboard you have the ViewController within
+            let storyboard = UIStoryboard(name: "TabBar", bundle: nil)
+
+            // Grab a reference to the ViewController you want to show 1st.
+            let initialViewController = storyboard.instantiateViewController(withIdentifier: "TabBarController")
+
+            // Set that ViewController as the rootViewController
+            self.window?.rootViewController = initialViewController
+
+            // Sets our window up in front
+            self.window?.makeKeyAndVisible()
+        }
         // Override point for customization after application launch.
         
         //
