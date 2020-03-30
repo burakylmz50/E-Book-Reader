@@ -105,30 +105,31 @@
                                     <action selector="showPassword2:" destination="0dV-ip-AAf" eventType="touchUpInside" id="RO1-4W-Qyx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNG-XC-CJF">
-                                <rect key="frame" x="252" y="826" width="64" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Do you have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mU-h5-Eyr">
+                                <rect key="frame" x="16" y="803" width="382" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="A6F-e6-58E"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <state key="normal" title="Giriş Yap"/>
-                                <connections>
-                                    <action selector="girisYapButton:" destination="0dV-ip-AAf" eventType="touchUpInside" id="41B-gs-EhC"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bir hesabın yok mu?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mU-h5-Eyr">
-                                <rect key="frame" x="116" y="826" width="133" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="X2z-qA-8A2"/>
+                                    <constraint firstAttribute="height" constant="21" id="Pel-2D-BVz"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNG-XC-CJF">
+                                <rect key="frame" x="16" y="841" width="382" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="cyh-vc-UOv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="girisYapButton:" destination="0dV-ip-AAf" eventType="touchUpInside" id="41B-gs-EhC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="0nV-4H-XQI" firstAttribute="top" secondItem="eMH-2X-NaZ" secondAttribute="bottom" constant="51" id="09t-uR-KgY"/>
+                            <constraint firstItem="Rld-Vz-Rog" firstAttribute="trailing" secondItem="5mU-h5-Eyr" secondAttribute="trailing" constant="16" id="1Pq-FQ-lD3"/>
                             <constraint firstItem="0nV-4H-XQI" firstAttribute="leading" secondItem="Rld-Vz-Rog" secondAttribute="leading" constant="16" id="4ZT-e8-OLo"/>
                             <constraint firstItem="tW0-hq-jAg" firstAttribute="leading" secondItem="Rld-Vz-Rog" secondAttribute="leading" constant="16" id="67b-7E-9Gl"/>
                             <constraint firstItem="Rld-Vz-Rog" firstAttribute="trailing" secondItem="tW0-hq-jAg" secondAttribute="trailing" constant="16" id="6EU-zA-y3x"/>
@@ -137,28 +138,28 @@
                             <constraint firstItem="4II-A0-IMa" firstAttribute="top" secondItem="tW0-hq-jAg" secondAttribute="bottom" constant="41" id="ChE-xw-dDU"/>
                             <constraint firstItem="EDb-qA-Y6s" firstAttribute="top" secondItem="4II-A0-IMa" secondAttribute="bottom" constant="41" id="Cty-Ci-YnY"/>
                             <constraint firstItem="lEd-eo-Ki7" firstAttribute="leading" secondItem="Rld-Vz-Rog" secondAttribute="leading" constant="16" id="DIZ-Hb-4Xn"/>
-                            <constraint firstItem="cNG-XC-CJF" firstAttribute="leading" secondItem="5mU-h5-Eyr" secondAttribute="trailing" constant="3" id="If6-9k-FqP"/>
-                            <constraint firstItem="Rld-Vz-Rog" firstAttribute="bottom" secondItem="5mU-h5-Eyr" secondAttribute="bottom" constant="15" id="KuB-kZ-aUF"/>
                             <constraint firstItem="JFu-bD-kEH" firstAttribute="top" secondItem="Rld-Vz-Rog" secondAttribute="top" constant="17" id="OQ7-BN-cnu"/>
                             <constraint firstItem="0nV-4H-XQI" firstAttribute="top" secondItem="EDb-qA-Y6s" secondAttribute="bottom" constant="30" id="R21-Ax-R6w"/>
                             <constraint firstItem="eMH-2X-NaZ" firstAttribute="leading" secondItem="EDb-qA-Y6s" secondAttribute="trailing" constant="-42" id="SMf-Di-B5C"/>
                             <constraint firstItem="Rld-Vz-Rog" firstAttribute="trailing" secondItem="wBs-xm-Mcx" secondAttribute="trailing" constant="16" id="U15-Ov-5Lh"/>
-                            <constraint firstItem="5mU-h5-Eyr" firstAttribute="leading" secondItem="Rld-Vz-Rog" secondAttribute="leading" constant="116" id="WOQ-R6-1hf"/>
+                            <constraint firstItem="5mU-h5-Eyr" firstAttribute="leading" secondItem="Rld-Vz-Rog" secondAttribute="leading" constant="16" id="W7X-TX-fwK"/>
                             <constraint firstItem="lEd-eo-Ki7" firstAttribute="top" secondItem="JFu-bD-kEH" secondAttribute="bottom" constant="41" id="YEG-nm-FiK"/>
                             <constraint firstItem="EDb-qA-Y6s" firstAttribute="top" secondItem="wBs-xm-Mcx" secondAttribute="bottom" constant="20" id="Ymq-io-4gh"/>
+                            <constraint firstItem="cNG-XC-CJF" firstAttribute="bottom" secondItem="Rld-Vz-Rog" secondAttribute="bottom" id="ZgL-W5-wyD"/>
                             <constraint firstItem="Rld-Vz-Rog" firstAttribute="trailing" secondItem="JFu-bD-kEH" secondAttribute="trailing" constant="20" id="ZvF-Sx-FkD"/>
                             <constraint firstItem="Rld-Vz-Rog" firstAttribute="trailing" secondItem="0nV-4H-XQI" secondAttribute="trailing" constant="16" id="aJ7-zn-iA4"/>
+                            <constraint firstItem="cNG-XC-CJF" firstAttribute="top" secondItem="5mU-h5-Eyr" secondAttribute="bottom" constant="17" id="bo3-j4-VOX"/>
                             <constraint firstItem="Rld-Vz-Rog" firstAttribute="trailing" secondItem="4II-A0-IMa" secondAttribute="trailing" constant="28" id="cKN-Zy-Jjb"/>
                             <constraint firstItem="4II-A0-IMa" firstAttribute="leading" secondItem="wBs-xm-Mcx" secondAttribute="trailing" constant="-42" id="cgr-7X-d4c"/>
                             <constraint firstItem="EDb-qA-Y6s" firstAttribute="leading" secondItem="Rld-Vz-Rog" secondAttribute="leading" constant="16" id="ejP-V1-0j4"/>
-                            <constraint firstItem="Rld-Vz-Rog" firstAttribute="bottom" secondItem="cNG-XC-CJF" secondAttribute="bottom" constant="15" id="gWO-3L-nyo"/>
+                            <constraint firstItem="Rld-Vz-Rog" firstAttribute="trailing" secondItem="cNG-XC-CJF" secondAttribute="trailing" constant="16" id="hrZ-tB-sW4"/>
                             <constraint firstItem="Rld-Vz-Rog" firstAttribute="trailing" secondItem="EDb-qA-Y6s" secondAttribute="trailing" constant="16" id="jgr-g5-OrW"/>
                             <constraint firstItem="wBs-xm-Mcx" firstAttribute="top" secondItem="tW0-hq-jAg" secondAttribute="bottom" constant="20" id="kPU-Bf-UvH"/>
+                            <constraint firstItem="cNG-XC-CJF" firstAttribute="leading" secondItem="Rld-Vz-Rog" secondAttribute="leading" constant="16" id="kag-nQ-2pz"/>
                             <constraint firstItem="wBs-xm-Mcx" firstAttribute="leading" secondItem="Rld-Vz-Rog" secondAttribute="leading" constant="16" id="oqx-Ep-Fg4"/>
                             <constraint firstItem="eMH-2X-NaZ" firstAttribute="top" secondItem="wBs-xm-Mcx" secondAttribute="bottom" constant="41" id="ov6-tk-1xd"/>
                             <constraint firstItem="Rld-Vz-Rog" firstAttribute="trailing" secondItem="lEd-eo-Ki7" secondAttribute="trailing" constant="16" id="pzN-Ro-5mM"/>
                             <constraint firstItem="JFu-bD-kEH" firstAttribute="leading" secondItem="Rld-Vz-Rog" secondAttribute="leading" constant="20" id="vMA-sv-jab"/>
-                            <constraint firstItem="Rld-Vz-Rog" firstAttribute="trailing" secondItem="cNG-XC-CJF" secondAttribute="trailing" constant="98" id="yc9-2i-RH1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Rld-Vz-Rog"/>
                     </view>

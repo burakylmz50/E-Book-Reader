@@ -90,7 +90,6 @@ class LoginController: UIViewController , UITextFieldDelegate{
         
         girisYapButton.setTitleColor(UIColor(red:0.65, green:0.69, blue:0.73, alpha:1.0), for:.normal)
         sifremiUnuttumButton.setTitleColor(UIColor(red:0.65, green:0.69, blue:0.73, alpha:1.0), for:.normal)
-        veyaLabel.textColor = UIColor(red:0.65, green:0.69, blue:0.73, alpha:1.0)
         girisYapLabel.textColor = UIColor(red:0.91, green:0.92, blue:0.92, alpha:1.0)
         hesabınYokMuLabel.textColor = UIColor(red:0.65, green:0.69, blue:0.73, alpha:1.0)
         uyeOlButton.setTitleColor(UIColor.white, for: .normal)
